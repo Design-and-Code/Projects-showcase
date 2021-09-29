@@ -39,6 +39,34 @@ Welcome to Design & Code where anyone interested in designing and coding can con
 </a>
 <br />
 
+  
+## Folder Structure:
+
+```
+root
+├── projects
+│   ├── Your Name
+│   │    ├── Project Name
+│   │    │     └── Code files
+│   |    │     └── README.MD
+│   │    │
+│   │    └── Project Name
+│   │          └── Code files
+│   |          └── README.MD
+│   |
+│   └── Your Name
+│        ├── Project Name    
+│        │     └── Code files
+│        │     └── README.MD
+│        │   
+│        └── Project Name
+│              └── Code files
+│              └── README.MD
+│            
+└──  App.js
+└──  README.MD
+```
+
 
 ## Contribution Guidelines🏗
 
@@ -114,38 +142,13 @@ git push -u origin <your_branch_name>
 
 
 
-### Folder Structure
-
-```
-root
-├── projects
-│   ├── Your Name
-│   │    ├── Project Name
-│   │    │     └── Code files
-│   |    │     └── README.MD
-│   │    │
-│   │    └── Project Name
-│   │          └── Code files
-│   |          └── README.MD
-│   |
-│   └── Your Name
-│        ├── Project Name    
-│        │     └── Code files
-│        │     └── README.MD
-│        │   
-│        └── Project Name
-│              └── Code files
-│              └── README.MD
-│            
-└──  App.js
-└──  README.MD
-```
-
 ## Project Maintainers 🛠
 
 <table>
   <tbody><tr>
     <td align="center"><a href="https://github.com/DevrajDC"><img alt="" src="https://avatars.githubusercontent.com/u/65373279" width="130px;"><br><sub><b> Devraj Chatribin </b></sub></a><br><a href="https://github.com/Design-and-Code/Projects-showcase" title="Code">💻 </a></td> </a></td>
+  <td align="center"><a href="https://github.com/lostgirljourney"><img alt="" src="https://avatars.githubusercontent.com/u/56036475" width="130px;"><br><sub><b> Falguni Sarkar </b></sub></a><br><a href="https://github.com/Design-and-Code/Projects-showcase" title="Code">💻 </a></td> </a></td>
+  <td align="center"><a href="https://github.com/OctoplusNinja"><img alt="" src="https://avatars.githubusercontent.com/u/37500406" width="130px;"><br><sub><b> Aniruddha Das </b></sub></a><br><a href="https://github.com/Design-and-Code/Projects-showcase" title="Code">💻 </a></td> </a></td>
     
   </tr>
 </tbody></table>
