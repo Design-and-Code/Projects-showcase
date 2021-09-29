@@ -119,21 +119,26 @@ git push -u origin <your_branch_name>
 ```
 root
 ├── projects
-│   ├── Devraj Chatribin
-│   │    ├── Lorem Ipsum Project
-│   │    │     └── Code files 
+│   ├── Your Name
+│   │    ├── Project Name
+│   │    │     └── Code files
+│   |    │     └── README.MD
 │   │    │
-│   │    └── New Project
+│   │    └── Project Name
 │   │          └── Code files
+│   |          └── README.MD
 │   |
-│   └── Shridhar Kamat
-│        ├── Dolor Sit Project    
+│   └── Your Name
+│        ├── Project Name    
 │        │     └── Code files
+│        │     └── README.MD
 │        │   
-│        └── Another Project
+│        └── Project Name
 │              └── Code files
+│              └── README.MD
 │            
 └──  App.js
+└──  README.MD
 ```
 
 ## Project Maintainers 🛠
