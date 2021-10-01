@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  height: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    background: #181d32;
+}
+
+.mic:hover:focus{
+    width: 150px;
+    height: 150px;
+    background: #2b3350;
+}
+
+.micIcon{
+    color: white;
+}
+
+@media screen and (min-width: 750px){
+    .mic{
+        margin: 0 0 0 200px;;
+    }
+}

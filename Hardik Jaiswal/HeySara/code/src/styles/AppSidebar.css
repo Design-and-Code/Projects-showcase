@@ -1,0 +1,64 @@
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: #181d32;
+  border-top-right-radius: 15px;;
+  border-bottom-right-radius: 15px;;
+  transition: all 0.5s ease;
+}
+
+#check{
+  display: none;
+}
+
+#open , #cancel{
+  position: absolute;
+  cursor: pointer;
+  border-radius: 6px;;
+}
+
+#open{
+  font-size: 28px;
+  color: #181d32;
+  padding: 6px 13px;
+  margin: 5.5px 0px;
+  transition: all 0.5s;
+}
+
+#cancel{
+  z-index: 2000;
+  color: white;
+  padding: 10px 15px;
+  left: -260px;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+#check:checked ~ #cancel{
+  display: none;
+}
+
+#check:checked ~ label #open{
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+  left: 260px;
+}
+
+#mode{
+  color: white;
+}
+
+@media screen and (max-width: 750px){
+  .sidebar{
+    left: -300px;
+  }
+}
