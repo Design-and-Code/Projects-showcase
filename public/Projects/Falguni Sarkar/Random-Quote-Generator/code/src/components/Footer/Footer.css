@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.footer-section {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	margin-bottom: 24px;
+	margin-top: 50px;
+	color: #a9a9a9;
+}
+
+a.username {
+	color: #a9a9a9;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.username:hover {
+	color: #18a0fb;
+}
