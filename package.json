@@ -1,0 +1,28 @@
+{
+  "name": "projects-showcase",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "fs": "^0.0.1-security",
+    "map-folder": "^1.2.7",
+    "next": "11.1.2",
+    "next-images": "^1.8.1",
+    "puppeteer": "^10.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
+  }
+}
