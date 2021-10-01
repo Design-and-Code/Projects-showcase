@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Devchallenges: Edie Home Page</title>
+  </head>
+
+  <body id="light-theme">
+    <!-- header -->
+    <header>
+      <div class="pre-nav">
+        <h1 class="logo"><a href="#home">Edie</a></h1>
+
+        <button class="open-nav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <nav>
+        <button class="close-nav">
+          <i class="fas fa-times-circle"></i>
+        </button>
+
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#works">Our Works</a>
+          </li>
+          <li>
+            <a href="#clients">Clients</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- dark mode -->
+    <div class="theme-switch">
+      <label for="dark-toggle" title="Change Theme">
+        <input type="checkbox" name="Toggle-theme" id="dark-toggle" />
+        <!-- day icon -->
+        <i class="fas fa-sun the-sun"></i>
+        <!-- night icon -->
+        <i class="fas fa-moon the-moon"></i>
+      </label>
+    </div>
+
+    <!-- home -->
+    <section id="home">
+      <p class="unhappy-services">Unhappy with your website?</p>
+      <h2>We create beautiful and fast web services</h2>
+      <img src="./heroImage.jpg" alt=" " />
+      <h2>Story, emotion and purpose</h2>
+      <p class="our-mission">
+        We help transform your ideas into real world applications that will
+        outperform your toughest competition and help you achieve your strategic
+        goals in short period of time.
+      </p>
+      <label for="contact-field" class="contact-field-label">
+        Want us to contact you?
+        <div class="contact-container">
+          <input
+            type="email"
+            name="Email"
+            id="contact-field"
+            placeholder="Email"
+            required
+          />
+          <input type="submit" value="Join" class="submit-contact" />
+        </div>
+      </label>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+      <h2>We offer high demand services</h2>
+      <div class="cards-container">
+        <div class="card card-1">
+          <!-- icon -->
+          <span><i class="fas fa-pen"></i></span>
+          <h3 class="card-title">UI/UX Design</h3>
+          <p class="card-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <button class="card-button">Get started</button>
+        </div>
+
+        <div class="card card-2">
+          <!-- icon -->
+          <span><i class="fas fa-code"></i></span>
+          <h3 class="card-title">Front End</h3>
+          <p class="card-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <button class="card-button">Get started</button>
+        </div>
+
+        <div class="card card-3">
+          <!-- icon -->
+          <span><i class="fas fa-server"></i></span>
+          <h3 class="card-title">Back End</h3>
+          <p class="card-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <button class="card-button">Get started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Works -->
+    <section id="works">
+      <h2>Good design means good business</h2>
+      <div class="projects-container">
+        <div class="project work-1">
+          <div class="project-img">
+            <img
+              src="./smarthome.jpg"
+              alt="Preview image of Smart Home Dashboard"
+              class="work-img-1"
+            />
+          </div>
+          <p>Full stack application</p>
+          <h3>Smart home dashboard</h3>
+        </div>
+
+        <div class="project work-2">
+          <div class="project-img">
+            <img
+              src="./onboard.png"
+              alt="Preview image of Onboard application"
+              class="work-img-2"
+            />
+          </div>
+          <p>UX/UI design</p>
+          <h3>Onboard application</h3>
+        </div>
+
+        <div class="project work-3">
+          <div class="project-img">
+            <img
+              src="./booking.png"
+              alt="Preview image of Booking System"
+              class="work-img-3"
+            />
+          </div>
+          <p>Mobile application</p>
+          <h3>Booking system</h3>
+        </div>
+
+        <div class="project work-4">
+          <div class="project-img">
+            <img
+              src="./juice-product.png"
+              alt="Preview image of Juice product homepage"
+              class="work-img-4"
+            />
+          </div>
+          <p>Front End application</p>
+          <h3>Juice product homepage</h3>
+        </div>
+      </div>
+
+      <a href="#works">see more <i class="fas fa-long-arrow-alt-right"></i></a>
+    </section>
+
+    <!-- Clients section -->
+    <section id="clients">
+      <!-- team -->
+      <div class="the-team">
+        <div class="about-team">
+          <p class="meet-team">Meet the team</p>
+          <h2>We are chilled and a laidback team</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="team-members">
+          <img src="./person3.png" alt="Team member 1" class="member-1" />
+          <img src="./person1.png" alt="Team member 2" class="member-2" />
+          <img src="./person2.png" alt="Team member 3" class="member-3" />
+        </div>
+      </div>
+      <!-- clients -->
+      <div class="client-review">
+        <blockquote>
+          “Fast and outstanding resutls. Edie understands their customer’s
+          needs. They have a young and talented team.”
+        </blockquote>
+        <img src="./person4.png" alt="Client's profile image" />
+        <p class="client-name">Carlos Tran</p>
+        <p class="client-company">The Decorate Gatsby</p>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer id="contact">
+      <div class="footer-contact">
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#works">Our Works</a>
+            </li>
+            <li>
+              <a href="#clients">Clients</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <p class="logo"><a href="#home">Edie</a></p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <label for="contact-field" class="contact-field-label">
+            Want us to contact you?
+            <div class="contact-container">
+              <input
+                type="email"
+                name="Email"
+                id="contact-field"
+                placeholder="Email"
+              />
+              <input type="submit" value="Join" class="submit-contact" />
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <p class="attribution">
+        created by <a href="http://github.com/Greeshma2903">Greeshma</a> -
+        <a href="https://devChallenges.io">devChallenges.io</a>
+      </p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
