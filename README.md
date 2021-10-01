@@ -44,26 +44,35 @@ Welcome to Design & Code where anyone interested in designing and coding can con
 
 ```
 root
-├── projects
-│   ├── Your Name
-│   │    ├── Project Name
-│   │    │     └── Code files
-│   |    │     └── README.MD
-│   │    │
-│   │    └── Project Name
-│   │          └── Code files
-│   |          └── README.MD
-│   |
-│   └── Your Name
-│        ├── Project Name    
-│        │     └── Code files
-│        │     └── README.MD
-│        │   
-│        └── Project Name
-│              └── Code files
-│              └── README.MD
-│            
-└──  App.js
+└──  public
+|      └──Projects
+|          ├── Your Name
+|          │    ├── Project Name
+|          │    │     └── Code files
+|          |    │     └── deployedLink.txt
+|          |    |     └── thumbnail.png
+|          |    |
+|          │    │
+|          │    └── Project Name
+|          │          └── Code files
+|          |          └── deployedLink.txt
+|          |          └── thumbnail.png
+|          |        
+|          |
+|          └── Your Name
+|               ├── Project Name    
+|               │     └── Code files
+|               │     └── deployedLink.txt
+|               |     └── thumbnail.png
+|               |
+|               │   
+|               └── Project Name
+|                     └── Code files
+|                     └── deployedLink.txt
+|                     └── thumbnail.png
+|           
+└──  pages
+└──  styles          
 └──  README.MD
 ```
 
