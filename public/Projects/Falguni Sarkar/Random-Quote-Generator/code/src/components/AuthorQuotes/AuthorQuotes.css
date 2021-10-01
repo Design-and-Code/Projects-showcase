@@ -1,0 +1,21 @@
+.loading-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.auth-div {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin: 50px auto 100px;
+}

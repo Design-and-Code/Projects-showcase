@@ -1,0 +1,17 @@
+*,
+html,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+*::selection,
+html::selection {
+  background-color: #c9c7ca;
+}
+
+body {
+  color: #000000;
+}
