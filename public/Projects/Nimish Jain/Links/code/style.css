@@ -1,0 +1,197 @@
+:root {
+    --black: #202020;
+  }
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background: rgb(39, 39, 39);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(61, 61, 61);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(99, 99, 99);
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.top img {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+
+.top .name {
+    margin-bottom: 10px;
+}
+
+.top .heading {
+    margin-bottom: 10px;
+}
+
+.skills {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-weight: 500!important;
+}
+
+.skills-text {
+    height: max-content;
+    align-self: flex-start;
+    font-size: 16px;
+    justify-content: center;
+    margin: 5px 10px;
+    padding: 3px;
+}
+
+.skills ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.skills li {
+    margin: 3px;
+    padding: 5px;
+    font-size: 16px;
+    min-width: 50px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: var(--black);
+    transition: all 0.25s ease-in-out;
+}
+
+.skills li:hover {
+    color: white;
+    background-color: transparent;
+    cursor: alias;
+}
+
+#sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.section a {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.linkCardHeading {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.linkCard {
+    background-color: white;
+    color: var(--black);
+    border: 2px solid white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    border-radius: 5px;
+}
+
+.fa-angle-right {
+    color: white;
+}
+
+.linkCard:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.linkCard i {
+    font-size: 30px;
+    margin: 5px;
+    width: 5%;
+    text-align: center;
+}
+
+.linkCard p {
+    width: 95%;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer {
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .section, .skills {
+      width: 90%;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills-text {
+        align-self: center;
+    }
+  }
