@@ -1,0 +1,132 @@
+{
+    "name": "Nimish Jain",
+    "image": "./assets/nimish.jpeg",
+    "designation": "Student, Vellore Institute of Technology, Vellore",
+    "heading": "Front-end Developer | Data Analytics Researcher",
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "C",
+        "C++",
+        "Java",
+        "Python",
+        "Matlab",
+        "MS Word",
+        "MS PowerPoint",
+        "MS Excel",
+        "VS Code",
+        "Git",
+        "GitHub",
+        "Research",
+        "Data Preprocessing",
+        "discord.py"
+    ],
+    "sections": [
+        {
+        "heading": false,
+        "links": [
+            {
+                "title": "Portfolio",
+                "icon": "<i class='fas fa-user'></i>",
+                "url": "https://www.nimish-jain.com"
+            },
+            {
+                "title": "Resume",
+                "icon": "<i class='fas fa-file-alt'></i>",
+                "url": "https://resume.nimish-jain.com"
+            }
+        ]
+        },
+        {
+            "heading": "DEV LINKS",
+            "links": [
+                {
+                    "title": "GitHub",
+                    "icon": "<i class='fab fa-github'></i>",
+                    "url": "https://github.com/nimishjn"
+                },
+                {
+                    "title": "HackerRank",
+                    "icon": "<i class='fab fa-hackerrank'></i>",
+                    "url": "https://www.hackerrank.com/nimishjain100701"
+                },
+                {
+                    "title": "DevTo",
+                    "icon": "<i class='fab fa-dev'></i>",
+                    "url": "https://dev.to/nimishjn"
+                },
+                {
+                    "title": "freeCodeCamp",
+                    "icon": "<i class='fab fa-free-code-camp'></i>",
+                    "url": "https://www.freecodecamp.org/nimishjn"
+                }
+            ]
+        },
+        {
+            "heading": "RESEARCH LINKS",
+            "links": [
+                {
+                    "title": "ORCID iD",
+                    "icon": "<i class='fab fa-orcid'></i>",
+                    "url": "https://orcid.org/0000-0001-9607-0764"
+                },
+                {
+                    "title": "Google Scholar",
+                    "icon": "<i class='fas fa-graduation-cap'></i>",
+                    "url": "https://scholar.google.com/citations?user=oKBKRQ0AAAAJ&hl=en"
+                },
+                {
+                    "title": "ResearchGate",
+                    "icon": "<i class='fab fa-researchgate'></i>",
+                    "url": "https://www.researchgate.net/profile/Nimish-Jain-4"
+                },
+                {
+                    "title": "Publons",
+                    "icon": "<i class='fas fa-file-powerpoint'></i>",
+                    "url": "https://publons.com/researcher/4167049/nimish-jain/"
+                },
+                {
+                    "title": "SciProfiles",
+                    "icon": "<i class='fas fa-graduation-cap'></i>",
+                    "url": "https://sciprofiles.com/profile/1689275"
+                },
+                {
+                    "title": "First research paper",
+                    "icon": "<i class='fas fa-file'></i>",
+                    "url": "https://ieeexplore.ieee.org/document/9404497"
+                }
+            ]
+        },
+        {
+            "heading": "GET IN TOUCH",
+            "links": [
+                {
+                    "title": "Facebook",
+                    "icon": "<i class='fab fa-facebook-f'></i>",
+                    "url": "https://www.facebook.com/nimishjain100701"
+                },
+                {
+                    "title": "Twitter",
+                    "icon": "<i class='fab fa-twitter'></i>",
+                    "url": "https://twitter.com/nimishjain_"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "<i class='fab fa-instagram'></i>",
+                    "url": "https://instagram.com/nimishjain_"
+                },
+                {
+                    "title": "LinkedIn",
+                    "icon": "<i class='fab fa-linkedin-in'></i>",
+                    "url": "https://www.linkedin.com/in/nimishjn/"
+                },
+                {
+                    "title": "Email",
+                    "icon": "<i class='far fa-envelope'></i>",
+                    "url": "mailto:nimishjain100701@gmail.com"
+                }
+            ]
+        }
+    ]
+}
