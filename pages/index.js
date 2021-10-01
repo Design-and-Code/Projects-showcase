@@ -72,10 +72,10 @@ export default function Home(props) {
               <h3 className="text-4xl text-center font-semibold mb-6">Projects</h3>
               {props?.arrData?.map((obj,i)=>{
                   return(
-                    <div className="my-10 grid gap-6 md:grid-flow-row md:grid-cols-2 mx-10 md:mx-32" key={i}>
+                    <div className="py-10 grid gap-6 md:grid-flow-row md:grid-cols-2 mx-10 md:mx-32" key={i}>
                       <a href={obj.projectLink} target="blank">
                       <div>
-                        <Image src={obj.projectImage} alt="project img" height="75px" width="100%" className="img-fluid" layout="responsive"/>
+                        <img src={obj.projectImage} alt="project img" width="100%" className="img-fluid" />
                       </div>
                       </a>
                       <a href="">
