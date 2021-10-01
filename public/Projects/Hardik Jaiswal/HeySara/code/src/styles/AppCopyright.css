@@ -1,0 +1,31 @@
+.copyright{
+    color: #a2a2a2;
+    font-family: 'Ubuntu',sans-serif;
+  }
+  
+  .copyright > p{
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  .copyright p a{
+    color: #a2a2a2;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  .copyright p a:hover{
+    color: white;
+  }
+
+  @media screen and (max-height: 670px){
+    .copyright > p{
+      margin-top: 50px;;
+    }
+  }
+
+  @media screen and (max-height: 645px){
+    .copyright > p{
+      margin-top: 30px;;
+    }
+  }
