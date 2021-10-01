@@ -1,9 +1,0 @@
-#AppHeader{
-    display: flex;
-    justify-content: center;
-}
-
-#AppHeader img{
-    width: 268px;
-    height: 89px;
-}
