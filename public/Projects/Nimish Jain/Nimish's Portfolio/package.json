@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimishjn/portfolio.git"
+  },
+  "author": "Nimish Jain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimishjn/portfolio/issues"
+  },
+  "homepage": "https://github.com/nimishjn/portfolio#readme"
+}

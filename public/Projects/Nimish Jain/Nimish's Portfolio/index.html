@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <script
+      src="https://kit.fontawesome.com/e9ee0e0e4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Nimish Jain</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="nav" class="navbar-container">
+      <a class="nav-title" href="#home">< Nimish ></a>
+      <ul class="desktop-navbar">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">TOOLS AND SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#research">RESEARCH</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
+      </ul>
+      <button
+        id="dark-mode-switch"
+        onclick="darkModeSwitch()"
+        class="dark-theme"
+        name="dark"
+        active
+      >
+        <i class="fas fa-moon"></i>
+      </button>
+      <button id="hamburger" onclick="openNavbar()" active>
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <ul class="mobile-navbar" id="mobile-navbar">
+      <button onclick="closeNavbar()" active>
+        <i class="fas fa-times-circle"></i>
+      </button>
+      <a href="#home"><li>HOME</li></a>
+      <a href="#about"><li>ABOUT</li></a>
+      <a href="#skills"><li>TOOLS AND SKILLS</li></a>
+      <a href="#projects"><li>PROJECTS</li></a>
+      <a href="#research"><li>RESEARCH</li></a>
+      <a href="#contact"><li>CONTACT ME</li></a>
+    </ul>
+
+    <div class="main-container">
+      <!-- Home -->
+      <div id="home" class="home-container">
+        <div class="home-text">
+          <h1>Hi, I’m Nimish</h1>
+          <h2>An aspiring fullstack developer</h2>
+          <h2>Data Analytics Researcher</h2>
+          <div class="home-socials">
+            <a href="https://github.com/nimishjn" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/nimishjn/" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://twitter.com/nimishjain_" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.hackerrank.com/nimishjain100701"
+              target="_blank"
+              ><i class="fab fa-hackerrank"></i
+            ></a>
+          </div>
+          <div class="buttons">
+            <button onclick="window.location = '#contact';" active>
+              <i class="fas fa-comment-dots"></i> GET IN TOUCH
+            </button>
+            <button onclick="window.location = '#about';" active>
+              <i class="fas fa-arrow-alt-circle-down"></i> KNOW MORE
+            </button>
+          </div>
+        </div>
+        <img src="./assets/hello.svg" alt="Hello" />
+      </div>
+
+      <!-- About -->
+      <div class="about-container" id="about">
+        <div class="about-image">
+          <img src="./assets/nimish.svg" alt="Nimish vector image" />
+        </div>
+        <div class="about-main">
+          <h1>About</h1>
+          <p>
+            Hey, this is Nimish Jain, second year undergrad at Vellore Institute
+            of Technology, Vellore pursuing B. Tech Information Technology. I am
+            currently learning react.js and will move to Node.js for backend. I
+            am also a Data Analytics Researcher in Data Preprocessing domain. I
+            have a conference publication in the IEEE organization and an
+            accepted conference and Journal Publication which will get published
+            by the end of this year.<br />
+            Do check out my projects, research profiles and publications.
+          </p>
+          <div class="about-buttons">
+            <button onclick="window.location = '#projects';" active>
+              Projects
+            </button>
+            <button onclick="window.location = '#research';" active>
+              Research
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div id="skills" class="skills-container">
+        <img
+          class="skills-svg"
+          src="./assets/skills.svg"
+          alt="Skills vector art"
+        />
+        <div class="skills-main">
+          <h1>Tools and skills</h1>
+          <div id="all-skills">
+            <!-- skill-card template
+                <div class="skill-card">
+                    <p>C</p>
+                    <img src="./assets/c.png" alt="C Programming">
+                </div> 
+                -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div id="projects" class="projects-container">
+        <h1>Projects</h1>
+        <div id="all-projects">
+          <!-- Project card
+            <div class="project-card">
+                <img src="./assets/quiz.png" alt="Project">
+                <h2>Project Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nam efficitur mauris sit amet finibus ultrices. Donec non 
+                    arcu a risus pulvinar fringilla sit amet id lacus. Integer 
+                    eleifend mi in libero eleifend, facilisis pharetra sem dapibus. </p>
+                <div class="project-buttons">
+                    <a id="deploy-button" href="./projects/sample" target="_blank"><i class="fas fa-eye"></i> View</a>
+                    <a href="https://github.com/nimishjn" id="code-button" target="_blank"><i class="fas fa-file-code"></i> Code</a>
+                </div>
+            </div> 
+            -->
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div id="research" class="research-container">
+        <div class="research-profiles">
+          <h1>Research Profiles</h1>
+          <div id="all-research-profiles">
+            <!-- Research profiles template
+                <a rel="noreferrer noopener" href="https://resume.nimish-jain.com" target="_blank">
+                    <div class="research-card">
+                        <i class="fas fa-file-alt"></i>
+                        <p>Resume</p>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </a> 
+                -->
+          </div>
+        </div>
+        <div class="research-papers">
+          <h1>Research Papers</h1>
+          <div id="all-research-papers">
+            <!-- Research paper template
+                <a rel="noreferrer noopener" href="https://resume.nimish-jain.com" target="_blank">
+                    <div class="research-card">
+                        <i class="fas fa-file-alt"></i>
+                        <p>Resume</p>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </a> 
+                -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="contact-container">
+        <div class="connect">
+          <h1>Connect with me</h1>
+          <div class="socials">
+            <a href="https://github.com/nimishjn" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+            <a href="https://www.linkedin.com/in/nimishjn/" target="_blank"
+              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+            >
+            <a href="https://twitter.com/nimishjain_" target="_blank"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a href="mailto:nimishjain100701@gmail.com" target="_blank"
+              ><i class="fas fa-envelope"></i> Email me</a
+            >
+            <a href="https://links.nimish-jain.com/" target="_blank"
+              ><i class="fas fa-link"></i> Other links</a
+            >
+          </div>
+        </div>
+        <div class="say-hi">
+          <h1>Say Hi</h1>
+          <form class="gform" name="say-hi-form">
+            <input
+              id="Name"
+              name="Name"
+              type="text"
+              placeholder="Name *"
+              required
+            />
+            <input
+              id="email"
+              name="Email"
+              type="email"
+              placeholder="Email *"
+              required
+            />
+            <input
+              id="message"
+              name="Message"
+              type="text"
+              placeholder="Message *"
+              required
+            />
+            <button type="submit" active>
+              <i class="fas fa-paper-plane"></i> Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <h3>
+          <a href="https://github.com/nimishjn/portfolio"
+            >Fork this website on GitHub</a
+          >
+        </h3>
+        <h3>© Nimish Jain</h3>
+      </footer>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
