@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div.weather-container {
+  background-color: #333551;
+  width: 280px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 36px auto;
+  border-radius: 10px;
+}
+
+div .widget-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+div.weather-icon > img {
+  color: white;
+  width: 40px;
+  height: auto;
+}
+
+div.temperature-value > p {
+  font-size: 26px;
+  color: white;
+  font-family: "Ubuntu", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  padding: 1px 0 0 0;
+}
+div.weather-container > div.location {
+  color: #a2a2a2;
+  text-align: center;
+  font-family: "Ubuntu", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.location p {
+  font-size: 16px;
+  margin-top: -5px;
+}
