@@ -1,0 +1,15 @@
+#main{
+    float: right;
+    margin: 2px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.toggler{
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+}

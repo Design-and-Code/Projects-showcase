@@ -1,0 +1,31 @@
+.userDetails img {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50%;
+}
+
+img.image-visible{
+  display: block;
+}
+
+img.image-hidden{
+  display: none;
+}
+
+.userDetails {
+  padding: 34px 0 0 0;
+}
+
+.userInfo {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.userInfo h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  padding: 10px 0 0 0;
+}

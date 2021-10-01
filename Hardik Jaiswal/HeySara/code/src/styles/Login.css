@@ -1,0 +1,30 @@
+.LoginContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 210px 0 0 0;
+}
+
+img{
+    width: 450px; height: auto;
+}
+
+.SignIn{
+    background-color: black;
+    color: white;
+    padding: 14px 19px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 450px){
+    img{
+        width: 300px;
+    }
+
+    .SignIn{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
