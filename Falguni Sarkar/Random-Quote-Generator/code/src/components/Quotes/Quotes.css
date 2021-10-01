@@ -1,0 +1,29 @@
+.quote-div {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  border-left: solid #f7df94 8px;
+  padding-left: 50px;
+  max-width: 75%;
+  display: flex;
+}
+
+.q-parent {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .quote-div {
+    font-size: 24px;
+    line-height: 1.5;
+    padding-left: 25px;
+  }
+  .q-parent {
+    margin: 0 auto 75px;
+  }
+}
