@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices</title>
+    <script src="https://kit.fontawesome.com/9fa61c79aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div class="heading-container">
+        <h1 class="heading">
+            Matrices
+        </h1>
+    </div>
+    <div class="basic-opt-contain">
+        <div class="heading-for-selection">
+            Basic Operations
+        </div>
+        <div class="container-select" id="basic-matrix-select">
+            <div class="drop-down" id="drop-down-basic-matrix-select">
+                <p class="select" id="select_basic">Select a matrix</p>
+                <i class="fas fa-caret-down pos"></i>
+                <nav>
+                    <ul>
+                        <li>2 x 2</li>
+                        <li>3 x 3</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-main none">
+        <div id="container-1">
+            <div class="grid-container" id="matrix-1">
+                <input class="grid-items" placeholder="a1" type="number">
+                <input class="grid-items" placeholder="a2" type="number">
+                <input class="grid-items" placeholder="a3" type="number">
+        
+                <input class="grid-items" placeholder="a4" type="number">
+                <input class="grid-items" placeholder="a5" type="number">
+                <input class="grid-items" placeholder="a6" type="number">
+        
+                <input class="grid-items" placeholder="a7" type="number">
+                <input class="grid-items" placeholder="a8" type="number">
+                <input class="grid-items" placeholder="a9" type="number">
+            </div>
+        </div>
+        <div class="container-select">
+            <div class="drop-down" id="drop-down-basic-3x3">
+                <p class="select" id="select_basic_3x3">Select an Operator</p>
+                <i class="fas fa-caret-down pos"></i>
+                <nav>
+                    <ul>
+                        <li>Addition</li>
+                        <li>Multiplication</li>
+                        <li>Subtraction</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="container-3">
+            <div class="grid-container" id="matrix-2">
+                <input class="grid-items" placeholder="b1" type="number">
+                <input class="grid-items" placeholder="b2" type="number">
+                <input class="grid-items" placeholder="b3" type="number">
+        
+                <input class="grid-items" placeholder="b4" type="number">
+                <input class="grid-items" placeholder="b5" type="number">
+                <input class="grid-items" placeholder="b6" type="number">
+        
+                <input class="grid-items" placeholder="b7" type="number">
+                <input class="grid-items" placeholder="b8" type="number">
+                <input class="grid-items" placeholder="b9" type="number">
+            </div>
+        </div>
+        <div class="container-4-3x3">
+            =
+        </div>
+        <div id="container-5">
+            <div class="grid-container" id="matrix-3">
+                <div class="grid-items center">c1</div>
+                <div class="grid-items center">c2</div>
+                <div class="grid-items center">c3</div>
+        
+                <div class="grid-items center">c4</div>
+                <div class="grid-items center">c5</div>
+                <div class="grid-items center">c6</div>
+        
+                <div class="grid-items center">c7</div>
+                <div class="grid-items center">c8</div>
+                <div class="grid-items center">c9</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-main-2">
+        <div class="grid-container grid-container-2x2" id="matrix-2x2-1">
+            <input class="grid-items" placeholder="a1" type="number">
+            <input class="grid-items" placeholder="a2" type="number">
+            <input class="grid-items" placeholder="a3" type="number">
+            <input class="grid-items" placeholder="a4" type="number">
+        </div>
+        <div class="container-select">
+            <div class="drop-down" id="drop-down-basic-2x2">
+                <p class="select" id="select_basic_2x2">Select an Operator</p>
+                <i class="fas fa-caret-down pos"></i>
+                <nav>
+                    <ul>
+                        <li>Addition</li>
+                        <li>Multiplication</li>
+                        <li>Subtraction</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="grid-container grid-container-2x2" id="matrix-2x2-2">
+            <input class="grid-items" placeholder="b1" type="number">
+            <input class="grid-items" placeholder="b2" type="number">
+            <input class="grid-items" placeholder="b3" type="number">
+            <input class="grid-items" placeholder="b4" type="number">
+        </div>
+        <div class="container-4-2x2">
+            =
+        </div>
+        <div class="grid-container grid-container-2x2" id="matrix-2x2-3">
+            <div class="grid-items center">c1</div>
+            <div class="grid-items center">c2</div>
+            <div class="grid-items center">c3</div>
+            <div class="grid-items center">c4</div>
+        </div>
+    </div>
+
+    <div class="misc-opt-contain">
+        <div class="container-main-3">
+            <div class="heading-for-selection">Miscellaneous Operations</div>
+        </div>
+        <div class="container-select">
+            <div class="drop-down" id="drop-down-misc-matrix-select">
+                <p class="select" id="select_basic">Select a matrix</p>
+                <i class="fas fa-caret-down pos"></i>
+                <nav>
+                    <ul>
+                        <li>2 x 2</li>
+                        <li>3 x 3</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-main-misc-2x2">
+        <div class="grid-container grid-container-2x2" id="matrix-2x2-misc">
+            <input class="grid-items" placeholder="a1" type="number">
+            <input class="grid-items" placeholder="a2" type="number">
+            <input class="grid-items" placeholder="a3" type="number">
+            <input class="grid-items" placeholder="a4" type="number">
+        </div>
+        <div class="container-select">
+            <div class="drop-down" id="drop-down-misc-2x2">
+                <p class="select" id="select_misc_2x2">Select an Operator</p>
+                <i class="fas fa-caret-down pos"></i>
+                <nav>
+                    <ul>
+                        <li>Transpose</li>
+                        <li>Inverse</li>
+                        <li>Minor</li>
+                        <li>Determinant</li>
+                        <li>Adjoint</li>
+                        <li>Co-factor</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="grid-container grid-container-2x2" id="matrix-2x2-misc-2">
+            <div class="grid-items center">c1</div>
+            <div class="grid-items center">c2</div>
+            <div class="grid-items center">c3</div>
+            <div class="grid-items center">c4</div>
+        </div>
+    </div>
+    <div class="container-main-misc-3x3 none">
+        <div id="container-1">
+            <div class="grid-container" id="matrix-3x3-misc">
+                <input class="grid-items" placeholder="a1" type="number">
+                <input class="grid-items" placeholder="a2" type="number">
+                <input class="grid-items" placeholder="a3" type="number">
+        
+                <input class="grid-items" placeholder="a4" type="number">
+                <input class="grid-items" placeholder="a5" type="number">
+                <input class="grid-items" placeholder="a6" type="number">
+        
+                <input class="grid-items" placeholder="a7" type="number">
+                <input class="grid-items" placeholder="a8" type="number">
+                <input class="grid-items" placeholder="a9" type="number">
+            </div>
+        </div>
+        <div class="container-select">
+            <div class="drop-down" id="drop-down-misc-3x3">
+                <p class="select" id="select_misc_3x3">Select an Operator</p>
+                <i class="fas fa-caret-down pos"></i>
+                <nav>
+                    <ul>
+                        <li>Transpose</li>
+                        <li>Inverse</li>
+                        <li>Minor</li>
+                        <li>Determinant</li>
+                        <li>Adjoint</li>
+                        <li>Co-factor</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="container-5">
+            <div class="grid-container" id="matrix-3x3-misc-2">
+                <div class="grid-items center">c1</div>
+                <div class="grid-items center">c2</div>
+                <div class="grid-items center">c3</div>
+        
+                <div class="grid-items center">c4</div>
+                <div class="grid-items center">c5</div>
+                <div class="grid-items center">c6</div>
+        
+                <div class="grid-items center">c7</div>
+                <div class="grid-items center">c8</div>
+                <div class="grid-items center">c9</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
