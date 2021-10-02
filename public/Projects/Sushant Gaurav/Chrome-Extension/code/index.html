@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>The OneTap Launcher</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <img class="logo-icon" src="images/mylogo.png" alt="The OneTab Logo">The OneTap<span
+                class="version">&nbsp;&nbsp;<sub>(1.0)</sub></span>
+        </h1>
+    </header>
+    <div class="content">
+        <p><br>Quick Access to all your favourite websites, a Note Taker, a Random Fact Teller and a Reminder!</p>
+    </div>
+    <div class="icons">
+        <div class="flex-container">
+            <div class="flex"><a href="https://linkedin.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="LinkedIn"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://github.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" height="40"
+                        width="40" /></a></div>
+
+            <div class="flex"><a href="https://instagram.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="Instagram"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://twitter.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="Twitter"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://fb.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="Facebook"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://youtube.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="YouTube"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://gmail.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="mail" height="40"
+                        width="40" /></a></div>
+        </div>
+    </div>
+    <div class="icons">
+        <div class="flex-container">
+
+            <div class="flex"><a href="https://geeksforgeeks.org" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/geeksforgeeks.svg"
+                        alt="GeeksForGeeks" height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://www.leetcode.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg" alt="LeetCode"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://en.wikipedia.org" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/wikipedia.svg" alt="Wikipedia"
+                        height="40" width="40" /></a></div>
+
+            <div class="flex"><a href="https://quora.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/quora.svg" alt="Quora" height="40"
+                        width="40" /></a></div>
+
+            <div class="flex"><a href="https://reddit.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/reddit.svg" alt="Reddit" height="40"
+                        width="40" /></a></div>
+            <div class="flex"><a href="https://netflix.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/netflix.svg" alt="Netflix"
+                        height="40" width="40" /></a></div>
+            <div class="flex"><a href="https://imdb.com" target="blank"><img align="center"
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/imdb.svg" alt="IMDB" height="40"
+                        width="40" /></a></div>
+
+        </div>
+    </div>
+    </div>
+    <!--Notes Taker Popup-->
+    <div class="card notes">
+        <div class="card-body">
+            <!-- <br> -->
+            <a href="https://keep.google.com/u/0/" target="_blank">
+                <button class="btn btn-primary" id="addBtn1" style="background-color:#0e4b79">Want to take a note? Click
+                    Here</button></a>
+        </div>
+        <!-- <br> -->
+    </div>
+
+    <!--Random Fact-->
+    <section>
+        <div class="container-joke">
+            <div class="alarm">
+                <p>Do you know?? There is a fact😮related to every number!
+                    Enter a random number🤔and get an associated fact !!!</p>
+                <input type="number" id="numberInput" placeholder="Enter any number...">
+                <div id="fact" class="card-body">
+                    <p id="factText" class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="alarm">
+        <p>Want to set a reminder to track your usage time? <br> Please enter your desired time!</p>
+        <input type="number" placeholder="interval in minutes..." id="num">
+        <p id="demo"></p>
+        <button id="add" class="btn btn-primary" style="background-color:#0e4b79">Remind me!!!</button>
+        <br><br>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
