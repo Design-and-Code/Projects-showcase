@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "The One Tap",
+  "description": "The extension contains links of the most commonly used websites, a Note Taker, a Random Number-Fact Teller and an Alarm Reminder.",
+  "author": "Sushant Gaurav",
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html",
+    "default_title": "The OneTap"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "alarms",
+    "notifications"
+  ]
+}
