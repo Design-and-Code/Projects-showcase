@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/WorldTime/static/css/main.f86a38b7.chunk.css",
+    "main.js": "/WorldTime/static/js/main.724a38b8.chunk.js",
+    "main.js.map": "/WorldTime/static/js/main.724a38b8.chunk.js.map",
+    "runtime-main.js": "/WorldTime/static/js/runtime-main.35765a48.js",
+    "runtime-main.js.map": "/WorldTime/static/js/runtime-main.35765a48.js.map",
+    "static/js/2.c6ae647f.chunk.js": "/WorldTime/static/js/2.c6ae647f.chunk.js",
+    "static/js/2.c6ae647f.chunk.js.map": "/WorldTime/static/js/2.c6ae647f.chunk.js.map",
+    "index.html": "/WorldTime/index.html",
+    "static/css/main.f86a38b7.chunk.css.map": "/WorldTime/static/css/main.f86a38b7.chunk.css.map",
+    "static/js/2.c6ae647f.chunk.js.LICENSE.txt": "/WorldTime/static/js/2.c6ae647f.chunk.js.LICENSE.txt",
+    "static/media/afternoon.723940ab.png": "/WorldTime/static/media/afternoon.723940ab.png",
+    "static/media/evening.20b55db3.png": "/WorldTime/static/media/evening.20b55db3.png",
+    "static/media/morning.98f72cc0.png": "/WorldTime/static/media/morning.98f72cc0.png",
+    "static/media/night.85864385.png": "/WorldTime/static/media/night.85864385.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35765a48.js",
+    "static/js/2.c6ae647f.chunk.js",
+    "static/css/main.f86a38b7.chunk.css",
+    "static/js/main.724a38b8.chunk.js"
+  ]
+}

@@ -1,0 +1,28 @@
+body {
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+
+.form-floating {
+    max-width:24%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.card {
+    min-width: 500px;
+    
+    margin: 20px auto;
+}
+
+element.style {
+    min-width: 19rem;
+}
+
+.icon{
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: -50px;
+}
