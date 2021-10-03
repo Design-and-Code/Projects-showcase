@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background: #252525;
+}
+
+.confetti-wrapper {
+  position: absolute;
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 75%;
+  height: 600px;
+  background: transparent;
+  pointer-events: none;
+}
+
+.success-container {
+  position: absolute;
+  border-radius: 30px;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 250px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: 50;
+  background-color: #ececec;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.success-container h1, .success-container h4, .success-container button {
+  font-family: "Ubuntu", monospace;
+}
+
+.success-container h1 {
+  font-size: 2.5em;
+}
+
+.success-container button {
+  border-radius: 15px;
+  border: none;
+  background: #333;
+  padding: 15px 20px;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 17%;
+}
+
+.title h1 {
+  font-size: 4em;
+  font-family: "Ubuntu", monospace;
+  color: white;
+}
+
+.visa-logo, .master-card-logo, .rupay-logo {
+  display: none;
+}
+
+.card {
+  position: relative;
+  z-index: 10;
+  top: 10vh;
+  left: 230px;
+  -webkit-perspective: 900px;
+          perspective: 900px;
+}
+
+.card .card-main-content {
+  position: relative;
+  width: 400px;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card .card-main-content > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card .card-main-content .card-front {
+  border-radius: 20px;
+  color: white;
+  height: 250px;
+  background: linear-gradient(45deg, #0045c7, #f31469);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card-main-content .card-front .card-chip-img {
+  width: 100px;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.card .card-main-content .card-front .card-design-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.25);
+          transform: translate(-50%, -50%) scale(1.25);
+  opacity: 0.35;
+}
+
+.card .card-main-content .card-front .visa-logo,
+.card .card-main-content .card-front .master-card-logo, .card .card-main-content .card-front .rupay-logo {
+  width: 100px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 7px;
+}
+
+.card .card-main-content .card-front .card-num {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.9rem;
+  font-family: "Ubuntu", monospace;
+  width: 100%;
+}
+
+.card .card-main-content .card-front .card-num span {
+  margin: 0px 10px;
+}
+
+.card .card-main-content .card-front .card-holder-name {
+  font-family: "Ubuntu", monospace;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.card .card-main-content .card-front .card-holder-name h4 {
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.card .card-main-content .card-front .card-holder-name h3 {
+  font-weight: lighter;
+}
+
+.card .card-main-content .card-front .card-expires {
+  font-family: "Ubuntu", monospace;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10%;
+  right: 7%;
+}
+
+.card .card-main-content .card-front .card-expires h4 {
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.card .card-main-content .card-front .card-expires h3 {
+  font-weight: lighter;
+}
+
+.card .card-main-content .card-back {
+  border-radius: 20px;
+  color: white;
+  height: 250px;
+  background: linear-gradient(45deg, #0045c7, #f31469);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .card-main-content .card-back .card-design-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.25);
+          transform: translate(-50%, -50%) scale(1.25);
+  opacity: 0.35;
+}
+
+.card .card-main-content .card-back .barcode {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 55px;
+  background: black;
+}
+
+.card .card-main-content .card-back .card-cvv-wrapper {
+  position: absolute;
+  z-index: 5;
+  top: 35%;
+  left: 10%;
+  width: 65%;
+  height: 40px;
+  background: #c9c9c9;
+}
+
+.card .card-main-content .card-back .card-cvv {
+  position: absolute;
+  top: 36%;
+  width: 80%;
+  height: 35px;
+  background: white;
+  color: black;
+  font-size: 25px;
+  font-family: "Ubuntu", monospace;
+}
+
+.card .card-main-content .card-back .card-cvv h5 {
+  text-align: right;
+  padding: 5px 10px 0px 0px;
+}
+
+.card .card-main-content .card-back .card-back-text p {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+  width: 80%;
+  font-family: "Ubuntu", monospace;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.card .card-main-content .card-back .visa-logo,
+.card .card-main-content .card-back .master-card-logo, .card .card-main-content .card-back .rupay-logo {
+  width: 100px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 7px;
+}
+
+.card:hover .card-main-content {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card.flip .card-main-content {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.payment-form {
+  background: #3a3a3a;
+  width: 600px;
+  border-radius: 40px;
+  z-index: 0;
+  height: 300px;
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  padding: 30px 50px;
+}
+
+.payment-form form {
+  pointer-events: auto;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Ubuntu", monospace;
+}
+
+.payment-form form > * {
+  width: 100%;
+  background: #333;
+  margin: 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.payment-form form > * input {
+  width: 70%;
+  background: transparent;
+  outline: none;
+  border: none;
+  height: 50px;
+  font-family: "Ubuntu", monospace;
+  font-size: 1.1em;
+  color: white;
+}
+
+.payment-form form > * input::-webkit-outer-spin-button,
+.payment-form form > * input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.payment-form form > * svg {
+  margin: 0px 15px;
+  fill: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.payment-form form .input-wrapper {
+  background: #3a3a3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+}
+
+.payment-form form .input-wrapper > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  width: 48%;
+  background: #333;
+  border: 2px solid white;
+}
+
+.payment-form form .input-wrapper .card-cvv-field svg {
+  position: relative;
+  left: 15%;
+}
+
+.payment-form form .input-wrapper .card-cvv-field input {
+  position: relative;
+  left: 12%;
+}
+
+.payment-form form .payment-btn {
+  position: absolute;
+  z-index: 10;
+  top: 82%;
+  right: -28%;
+  width: 200px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background: #d6d6d6;
+  border-radius: 20px;
+}
+
+.payment-form form .payment-btn input {
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+}
+
+.payment-form form .payment-btn:hover {
+  -webkit-box-shadow: 0px 0px 15px grey;
+          box-shadow: 0px 0px 15px grey;
+}
+/*# sourceMappingURL=flip_3d_styles.css.map */
