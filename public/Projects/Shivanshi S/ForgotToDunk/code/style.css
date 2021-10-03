@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&family=Tourney:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    background-image: url(./assets/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    cursor: none;
+    font-family: 'Tourney', 'Rampart One', cursive;
+    color: rgb(243, 222, 30);
+}
+img {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.howtoplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin: auto;
+    min-height: 4em;
+    font-size: 3rem;
+    width: 100vw;
+    position: absolute;
+    top: calc(10% - 1rem);
+}
+
+.landing {
+    font-family: 'Press Start 2P',cursive;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/bg\ 8.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    cursor: default;
+    transition: all 0.1s ease;
+    color: black;
+}
+.landing .playbtn {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid rgb(12, 12, 12);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+::selection {
+    color: rgb(0, 255, 234);
+    background: rgba(197, 197, 33, 0.637);
+  }
+.landing .playbtn:hover {
+    padding: 20px;
+}
+.cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    height:40px;
+    width: 40px;
+    z-index: 1;
+    pointer-events: none;
+}
+.target {
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    z-index: 0;
+}
+/* ------ SCORE --------- */
+
+.score {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-size: 4rem;
+    opacity: 0.9;
+}
+
+.timer {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin: 20px;
+    font-size: 2rem;
+}
+.highscore {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
