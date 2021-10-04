@@ -1,0 +1,101 @@
+html,
+body {
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  min-height: 200px;
+  width: 400px;
+}
+
+h1 {
+  font-family: "Menlow", sans-serif;
+  font-size: "21px";
+  font-weight: 400;
+  color: #0e4b79;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  outline: 0;
+}
+
+img {
+  width: 30px;
+}
+
+header {
+  align-items: center;
+  border-bottom: 0.5px solid #dadada;
+}
+
+.content {
+  padding: 0 22px;
+}
+
+.icons {
+  border-top: 0.5px solid #dadada;
+  height: 50px;
+  width: 100%;
+}
+
+.logo {
+  padding: 16px;
+}
+
+.logo-icon {
+  vertical-align: text-bottom;
+  margin-right: 12px;
+}
+
+.version {
+  color: tomato;
+  font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 22px;
+}
+
+.flex {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  width: 120px;
+}
+
+.flex:hover {
+  opacity: 0.5;
+}
+
+.flex .fa {
+  font-size: 35px;
+  color: black;
+}
+
+.notes {
+  align-items: center;
+}
+
+.container-joke {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 1px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-joke p {
+  text-align: justify;
+} 
+
+.alarm {
+  text-align: center;
+}
+
+.alarm #demo{
+  color:tomato;
+}
