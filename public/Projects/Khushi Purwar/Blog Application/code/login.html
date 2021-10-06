@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+    <style>
+      .main_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        gap: 30px;
+      }
+      h1 {
+        font-family: "Noto Serif", serif;
+        font-size: 40px;
+        letter-spacing: 2px;
+      }
+      @media screen and (max-width: 360px) {
+        .main_container {
+          margin-left: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <div>
+        <img
+          src="https://t3.ftcdn.net/jpg/03/39/70/90/360_F_339709048_ZITR4wrVsOXCKdjHncdtabSNWpIhiaR7.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div id="sawo-container" style="height: 420px; width: 380px">
+          <h1>LOGIN</h1>
+          <p align="center">
+            (Please enter your correct email id. You will receive an OTP on your
+            entered email.)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+      var config = {
+        // should be same as the id of the container created on 3rd step
+        containerID: "sawo-container",
+        // can be one of 'email' or 'phone_number_sms'
+        identifierType: "email",
+        // Add the API key copied from 2nd step
+        apiKey: "fe58a564-b4d4-427b-b8b4-e33c29605fe8",
+        // Add a callback here to handle the payload sent by sdk
+        onSuccess: (payload) => {
+          window.location = "./blog.html";
+        },
+      };
+      var sawo = new Sawo(config);
+      sawo.showForm();
+    </script>
+  </body>
+</html>
