@@ -20,25 +20,25 @@ Landing page -> Login page -> Blog Page
 
 Landing Page
 
-<img src="https://github.com/khushi-purwar/Developer-Days/blob/master/Blog%20Application/Screenshots/ss1.png" />
+<img src="https://github.com/khushi-purwar/Projects-showcase/blob/dev-kp/public/Projects/Khushi%20Purwar/Blog%20Application/code/Screenshots/ss1.png" />
 
 Login Page
 
-<img src="https://github.com/khushi-purwar/Developer-Days/blob/master/Blog%20Application/Screenshots/ss2.png" />
+<img src="https://github.com/khushi-purwar/Projects-showcase/blob/dev-kp/public/Projects/Khushi%20Purwar/Blog%20Application/code/Screenshots/ss2.png" />
 
 Blog Page (Main Page)
 
-<img src="https://github.com/khushi-purwar/Developer-Days/blob/master/Blog%20Application/Screenshots/ss3.png" />
+<img src="https://github.com/khushi-purwar/Projects-showcase/blob/dev-kp/public/Projects/Khushi%20Purwar/Blog%20Application/code/Screenshots/ss3.png" />
 
 Click on the `Add New`, UI looks like:
 
 
-<img src="https://github.com/khushi-purwar/Developer-Days/blob/master/Blog%20Application/Screenshots/ss4.png" />
+<img src="https://github.com/khushi-purwar/Projects-showcase/blob/dev-kp/public/Projects/Khushi%20Purwar/Blog%20Application/code/Screenshots/ss4.png" />
 
 Click on the `Open Blog`, UI looks like:
 
 
-<img src="https://github.com/khushi-purwar/Developer-Days/blob/master/Blog%20Application/Screenshots/ss5.png" />
+<img src="https://github.com/khushi-purwar/Projects-showcase/blob/dev-kp/public/Projects/Khushi%20Purwar/Blog%20Application/code/Screenshots/ss5.png" />
 
 ## Visit Website
 
