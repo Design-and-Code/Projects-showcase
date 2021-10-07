@@ -1,0 +1,19 @@
+.footer {
+  background: $dark-blue;
+  color: $off-white;
+  padding: $l-size 0;
+  margin: 0;
+}
+
+.footer__text {
+  font-size: $s-size;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .footer {
+    margin-bottom: $s-size;
+  }
+}
