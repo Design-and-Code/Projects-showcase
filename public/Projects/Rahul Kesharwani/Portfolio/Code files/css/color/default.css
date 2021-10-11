@@ -1,0 +1,39 @@
+.text-custom,
+.custom-nav .navbar-nav li a:hover,
+.custom-nav .navbar-nav li a:active,
+.custom-nav .navbar-nav li.active a,
+.custom-nav.stickyadd .navbar-nav li a:hover,
+.custom-nav.stickyadd .navbar-nav li a:active,
+.custom-nav.stickyadd .navbar-nav li.active a,
+.about-social li a:hover {
+    color: #FAC42F !important;
+}
+
+.btn-custom,
+.form-kerri .form-control:focus,
+.about-social li a:hover, {
+    border-color: #FAC42F;
+}
+
+.btn-custom,
+.back_top,
+.services-boxes .services-title-border,
+.owl-theme .owl-controls .owl-page span,
+.work_menu a.active,
+.work_menu a:hover {
+    background-color: #FAC42F;
+    
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    background-color: #d8576f;
+    border-color: #d8576f;
+}
