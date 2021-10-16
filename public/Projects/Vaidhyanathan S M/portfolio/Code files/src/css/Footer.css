@@ -1,0 +1,15 @@
+.footer {
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.text-color {
+  color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
