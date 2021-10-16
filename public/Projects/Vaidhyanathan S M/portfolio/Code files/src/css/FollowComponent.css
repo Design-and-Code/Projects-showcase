@@ -1,0 +1,8 @@
+#follow {
+    background-image: linear-gradient(135deg, rgb(50, 27, 155), rgb(67, 36, 206));
+    -webkit-clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    padding: 15rem 0 10rem;
+    margin-top: -5rem;
+    color: #fff;
+}
