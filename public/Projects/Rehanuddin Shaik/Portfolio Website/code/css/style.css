@@ -1,0 +1,2562 @@
+@charset "utf-8";
+
+/*
+/*	Copyright (c) 2021 Marketify
+/*	Author: Marketify
+/*	This file is made for CURRENT TEMPLATE
+
+01)	RYKER BASE
+02) RYKER TOPBAR
+03) RYKER MOBILE MENU
+04) RYKER HERO
+05) RYKER ABOUT
+06) RYKER SERVICES
+07) RYKER PORTFOLIO
+08) RYKER VIDEO
+09) RYKER TESTIMONIALS
+10) RYKER NEWS
+11) RYKER CONTACT
+12) RYKER COPYRIGHT
+13) RYKER MAGIC CURSOR
+14) RYKER MEDIA QUERIES (FOR SMALL DEVIVES)
+
+
+/*---------------------------------------------------*/
+/*	01) RYKER BASE
+/*---------------------------------------------------*/
+
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	font-family: 'Mulish';
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.5px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #fff;
+	color: #767676;
+	overflow-x: hidden;
+	width: 100%;
+}
+body::-webkit-scrollbar {
+	width: 11px;
+}
+body {
+	scrollbar-width: thin;
+	scrollbar-color: #999 #fff;
+}
+body:-webkit-scrollbar-track {
+	background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #999;
+	border-radius: 6px;
+	border: 3px solid #fff;
+}
+svg {
+	fill: currentcolor;
+	width: 15px;
+	height: 15px;
+}
+img.svg {
+	width: 15px;
+	height: 15px;
+}
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #767676;
+}
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #767676;
+	opacity: 1;
+}
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #767676;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #767676;
+}
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #767676;
+}
+
+::placeholder {
+	/* Most modern browsers support this now. */
+	color: #767676;
+}
+
+.container {
+	max-width: 1250px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	padding: 0px 40px;
+	position: relative;
+	clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.4;
+	font-family: 'Poppins';
+	color: #000;
+}
+
+h1 {
+	font-size: 45px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 16px;
+}
+
+.ryker_tm_all_wrap {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.ryker_tm_all_wrap,
+.ryker_tm_all_wrap * {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 99999;
+	display: flex;
+}
+#preloader:before,
+#preloader:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+	background-color: #000;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+#preloader:after {
+	left: auto;
+	right: 0;
+}
+#preloader .loader_line {
+	margin: auto;
+	width: 1px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.loader_line:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 1px;
+	height: 0%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: #fff;
+	-webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+	-o-animation: lineheight 1000ms ease-in-out 0s forwards;
+	animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+.loader_line:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #999;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-animation: lineround 1200ms linear 0s infinite;
+	-o-animation: lineround 1200ms linear 0s infinite;
+	animation: lineround 1200ms linear 0s infinite;
+	animation-delay: 2000ms;
+}
+
+@keyframes lineheight {
+	0% {
+		height: 0%;
+	}
+	100% {
+		height: 100%;
+	}
+}
+
+@keyframes lineround {
+	0% {
+		-webkit-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(200%);
+		-ms-transform: translateY(200%);
+		-o-transform: translateY(200%);
+		transform: translateY(200%);
+	}
+}
+
+/*hiding all*/
+.preloaded .loader_line:after {
+	opacity: 0;
+}
+.preloaded .loader_line {
+	opacity: 0;
+	height: 100% !important;
+}
+.preloaded:before,
+.preloaded:after {
+	-webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+	-o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+	animation: preloadedzero 300ms ease-in-out 500ms forwards;
+}
+@keyframes preloadedzero {
+	0% {
+		width: 50%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+.ryker_tm_section {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+
+/*---------------------------------------------------*/
+/*	02) RYKER TOPBAR
+/*---------------------------------------------------*/
+
+.ryker_tm_topbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+.ryker_tm_topbar.animate {
+	background-color: rgba(255, 255, 255, 1);
+}
+.ryker_tm_topbar .topbar_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 40px 10px 50px;
+}
+.ryker_tm_topbar .logo img {
+	max-width: 90px;
+	max-height: 70px;
+}
+.ryker_tm_topbar .menu {
+	display: flex;
+	align-items: center;
+}
+.ryker_tm_topbar .list {
+	padding-right: 40px;
+}
+.ryker_tm_topbar .list ul {
+	margin: 0px;
+	list-style-type: none;
+}
+.ryker_tm_topbar .list ul li {
+	margin: 0px 20px 0px 0px;
+	display: inline-block;
+	list-style-type: none;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	left: 10px;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_topbar .list ul li:last-child {
+	margin-right: 0px;
+}
+.ryker_tm_topbar .list ul li.opened {
+	opacity: 1;
+	visibility: visible;
+	left: 0px;
+}
+.ryker_tm_topbar .list ul li a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Poppins';
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_topbar .list ul li a:hover {
+	color: #d1701f;
+}
+.ryker_tm_topbar .list ul li.current a {
+	color: #d1701f;
+}
+.ryker_tm_topbar .trigger {
+	line-height: 1;
+}
+.trigger .hamburger-inner,
+.trigger .hamburger-inner:after,
+.trigger .hamburger-inner:before {
+	height: 2px;
+	width: 30px;
+}
+.trigger .hamburger {
+	padding: 0px;
+}
+
+/*---------------------------------------------------*/
+/*	03) RYKER MOBILE MENU
+/*---------------------------------------------------*/
+
+.ryker_tm_mobile_menu {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 10;
+}
+.ryker_tm_mobile_menu .mobile_menu_inner {
+	width: 100%;
+	height: auto;
+	float: left;
+	clear: both;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 15px 30px 15px 40px;
+}
+.ryker_tm_mobile_menu .mobile_in {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ryker_tm_mobile_menu .mobile_in .logo img {
+	max-width: 80px;
+	max-height: 70px;
+}
+.ryker_tm_mobile_menu .trigger {
+	line-height: 0;
+}
+.ryker_tm_mobile_menu .dropdown {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #fff;
+	display: none;
+}
+.ryker_tm_mobile_menu .dropdown .dropdown_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 25px 40px;
+}
+.ryker_tm_mobile_menu .dropdown .dropdown_inner ul {
+	margin: 0px;
+	list-style-type: none;
+}
+.ryker_tm_mobile_menu .dropdown .dropdown_inner ul li {
+	margin: 0px;
+	float: left;
+	width: 100%;
+}
+.ryker_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	padding: 0px 0px;
+	font-family: 'Poppins';
+	font-weight: 500;
+}
+
+/*---------------------------------------------------*/
+/*	04) RYKER HERO
+/*---------------------------------------------------*/
+
+.ryker_tm_hero {
+	width: 100%;
+	height: 100vh;
+	float: left;
+	position: relative;
+	background-color: #f9f9f9;
+}
+.ryker_tm_hero .container {
+	height: 100vh;
+}
+.ryker_tm_hero .content {
+	width: 100%;
+	height: 100%;
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ryker_tm_hero .texts {
+	padding-right: 50px;
+}
+.ryker_tm_hero .job {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.ryker_tm_hero video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+}
+.ryker_tm_hero .job h3 {
+	background-color: #f9f9f9;
+	mix-blend-mode: screen;
+	position: relative;
+	z-index: 5;
+	font-size: 72px;
+	font-weight: 900;
+	line-height: 1.3;
+}
+.ryker_tm_hero .desc {
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+}
+.ryker_tm_hero .desc p {
+	max-width: 550px;
+	font-size: 17px;
+}
+.ryker_tm_button {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_button a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #d1701f;
+	border: 2px solid #d1701f;
+	display: inline-block;
+	padding: 15px 50px;
+	font-family: 'Poppins';
+	border-radius: 50px;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_button a:hover {
+	background-color: transparent;
+	color: #000;
+}
+
+.ryker_tm_button .download_CV::after {
+	content: '\e9c2';
+	font-family: 'icomoon';
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.ryker_tm_button .hire_me::after {
+	content: '\ea3e';
+	font-family: 'icomoon';
+	font-size: 16px;
+	margin-left: 7px;
+}
+
+.ryker_tm_hero .avatar {
+	min-width: 450px;
+	min-height: 450px;
+	position: relative;
+	border-radius: 100%;
+}
+.ryker_tm_hero .avatar .image {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: morph 8s ease-in-out infinite 1s;
+	background-blend-mode: multiply;
+	-webkit-box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.3);
+}
+@keyframes morph {
+	0% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+}
+
+.short_skills {
+	width: 100%;
+	clear: both;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	position: absolute;
+	top: 80%;
+	bottom: 8%;
+	left: auto;
+}
+.short_skills .text {
+	position: relative;
+}
+.short_skills .text:before {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: -5px;
+	left: 100%;
+	margin-left: 30px;
+}
+.short_skills .text span {
+	line-height: 1.4;
+	font-size: 13px;
+	font-family: 'Poppins';
+}
+.short_skills .icons {
+	/* margin-left: 80px; */
+}
+.short_skills .icons ul {
+	margin: 0px;
+	list-style-type: none;
+}
+.short_skills .icons ul li {
+	margin: 0px 20px 10px 0px;
+	float: left;
+	width: 80px;
+	height: 80px;
+	background-color: #fff;
+	border-radius: 100%;
+	position: relative;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.short_skills .icons ul li:last-child {
+	margin-right: 0px;
+}
+.short_skills .icons ul li .svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 40px;
+}
+.short_skills .icons ul li .node {
+	width: 50px;
+	height: 50px;
+}
+
+/*---------------------------------------------------*/
+/*	05) RYKER ABOUT
+/*---------------------------------------------------*/
+
+.ryker_tm_about {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 100px 0px 25px 0px;
+}
+.ryker_tm_about .about_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+}
+.ryker_tm_about .left {
+	width: 50%;
+	margin-right: 50px;
+}
+.ryker_tm_about .left .image {
+	position: relative;
+}
+.ryker_tm_about .left .image img {
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+}
+.ryker_tm_about .left .image .main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.ryker_tm_about .left .image .main video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+	border-radius: 15px;
+}
+
+.ryker_tm_about .right {
+	width: 50%;
+	margin-left: 50px;
+}
+.ryker_tm_title {
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_title span {
+	font-family: 'Poppins';
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #d1701f;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.ryker_tm_title h3 {
+	font-weight: 700;
+}
+.ryker_tm_about .text {
+	width: 100%;
+	float: left;
+	padding-top: 18px;
+	margin-bottom: 20px;
+}
+.ryker_tm_about .signature {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.ryker_tm_about .signature img {
+	max-width: 250px;
+}
+.ryker_tm_about .experience {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	background-color: #fff;
+	bottom: -40px;
+	right: -40px;
+	z-index: 1;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.ryker_tm_about .experience .year {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 72px;
+	font-weight: 800;
+	background-attachment: fixed;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: experience 25s linear infinite;
+}
+
+@keyframes experience {
+	0% {
+		background-position: 0px;
+	}
+	100% {
+		background-position: -1000px;
+	}
+}
+
+#circle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+#circle text {
+	font-family: 'Poppins';
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+#circle svg {
+	position: absolute;
+	left: -90px;
+	top: -90px;
+	width: 400px;
+	height: 400px;
+
+	-webkit-animation: rotate 25s linear infinite;
+	-moz-animation: rotate 25s linear infinite;
+	-ms-animation: rotate 25s linear infinite;
+	-o-animation: rotate 25s linear infinite;
+	animation: rotate 25s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0);
+	}
+}
+@-moz-keyframes rotate {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0);
+	}
+}
+@-ms-keyframes rotate {
+	from {
+		-ms-transform: rotate(360deg);
+	}
+	to {
+		-ms-transform: rotate(0);
+	}
+}
+@-o-keyframes rotate {
+	from {
+		-o-transform: rotate(360deg);
+	}
+	to {
+		-o-transform: rotate(0);
+	}
+}
+@keyframes rotate {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0);
+	}
+}
+
+/*---------------------------------------------------*/
+/*	06) RYKER SERVICES
+/*---------------------------------------------------*/
+
+.ryker_tm_services {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #f9f9f9;
+	padding: 100px 0px 10px 0px;
+}
+.ryker_tm_services .services_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+}
+.ryker_tm_services .left {
+	width: 50%;
+	margin-right: 50px;
+}
+.ryker_tm_services .text {
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 37px;
+}
+.ryker_progress {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.progress_inner {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.progress_inner:last-child {
+	margin-bottom: 0px;
+}
+.progress_inner > span {
+	margin: 0px 0px 5px 0px;
+	width: 100%;
+	display: block;
+	text-align: left;
+	color: #000;
+	font-family: 'Poppins';
+}
+.progress_inner span.number {
+	float: right;
+}
+.progress_inner .background {
+	background: rgba(0, 0, 0, 0.09);
+	width: 100%;
+	min-width: 100%;
+	position: relative;
+	height: 7px;
+	border-radius: 50px;
+}
+.progress_inner .background .bar_in {
+	height: 100%;
+	background: #d1701f;
+	width: 0px;
+	overflow: hidden;
+	border-radius: 50px;
+}
+.progress_inner .background .bar {
+	width: 0px;
+	height: 100%;
+}
+.progress_inner .background .bar.open {
+	-webkit-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
+	-moz-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
+	animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
+	width: 100%;
+}
+
+@-webkit-keyframes wow {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@-moz-keyframes wow {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@keyframes wow {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.ryker_tm_services .right {
+	width: 50%;
+	margin-left: 50px;
+}
+.ryker_tm_services .right ul {
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.ryker_tm_services .right ul li {
+	margin: 0px 0px 50px 0px;
+	width: 50%;
+	float: left;
+	padding-left: 50px;
+	position: relative;
+}
+.ryker_tm_services .right ul li:nth-child(1) {
+	margin-top: 50px;
+}
+.ryker_tm_services .right ul li .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	background: linear-gradient(
+		90deg,
+		rgba(248, 163, 23, 1) 0%,
+		rgba(253, 196, 7, 1) 100%
+	);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	padding: 55px 40px;
+	border-radius: 10px;
+}
+.ryker_tm_services .right ul li .svg {
+	width: 50px;
+	height: 50px;
+	color: #d1701f;
+	margin-bottom: 30px;
+	display: block;
+}
+.ryker_tm_services .right ul li .title {
+	font-size: 20px;
+}
+
+/*---------------------------------------------------*/
+/*	07) RYKER PORTFOLIO
+/*---------------------------------------------------*/
+
+.ryker_tm_portfolio {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 100px 0px 10px 0px;
+}
+.ryker_tm_portfolio .portfolio_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_portfolio .portfolio_list {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 40px;
+}
+.ryker_tm_portfolio .portfolio_list ul {
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.ryker_tm_portfolio .portfolio_list ul li {
+	margin: 0px 0px 50px 0px;
+	width: 33.3333%;
+	float: left;
+	padding-left: 50px;
+}
+.ryker_tm_portfolio .portfolio_list ul li .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.ryker_tm_portfolio .portfolio_list ul li .image {
+	position: relative;
+}
+.ryker_tm_portfolio .portfolio_list ul li .image img {
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+}
+.ryker_tm_portfolio .portfolio_list ul li .image .main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+}
+.ryker_tm_portfolio .portfolio_list ul li .image .main:before {
+	background-color: #000;
+	content: '';
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s;
+	transition-delay: 0.2s;
+	transform: translateY(0px) translateX(0px);
+	width: 100%;
+	z-index: -1;
+	border-radius: 10px;
+}
+.ryker_tm_portfolio .portfolio_list ul li .image .main:after {
+	background-color: #d1701f;
+	content: '';
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s;
+	transition-delay: 0.2s;
+	transform: translateY(0px) translateX(0px);
+	width: 100%;
+	z-index: -1;
+	border-radius: 10px;
+}
+.ryker_tm_portfolio .portfolio_list ul li .list_inner:hover {
+	animation-name: hoverPop;
+	animation-duration: 0.4s;
+	animation-fill-direction: forward;
+}
+.ryker_tm_portfolio .portfolio_list ul li .list_inner:hover .main:before {
+	animation: slick-hover-2 3s 0.4s linear infinite;
+	transform: translateY(-20px) translateX(-20px);
+}
+.ryker_tm_portfolio .portfolio_list ul li .list_inner:hover .main:after {
+	animation: slick-hover 3s 0.4s linear infinite reverse;
+	transform: translateY(20px) translateX(20px);
+}
+
+@keyframes hoverPop {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	33% {
+		transform: scale(1.05);
+	}
+	66% {
+		transform: scale(0.9);
+	}
+}
+
+@keyframes slick-hover {
+	0.00% {
+		transform: translateY(20px) translateX(20px);
+	}
+	16.67% {
+		transform: translateY(-13px) translateX(-9px);
+	}
+	33.33% {
+		transform: translateY(4px) translateX(12px);
+	}
+	50.00% {
+		transform: translateY(20px) translateX(-20px);
+	}
+	66.67% {
+		transform: translateY(-3px) translateX(8px);
+	}
+	83.33% {
+		transform: translateY(-15px) translateX(-11px);
+	}
+	100.00% {
+		transform: translateY(20px) translateX(20px);
+	}
+}
+
+@keyframes slick-hover-2 {
+	0.00% {
+		transform: translateY(-20px) translateX(-20px);
+	}
+	16.67% {
+		transform: translateY(3px) translateX(-5px);
+	}
+	33.33% {
+		transform: translateY(18px) translateX(-10px);
+	}
+	50.00% {
+		transform: translateY(-20px) translateX(20px);
+	}
+	66.67% {
+		transform: translateY(15px) translateX(-4px);
+	}
+	83.33% {
+		transform: translateY(-1px) translateX(15px);
+	}
+	100.00% {
+		transform: translateY(-20px) translateX(-20px);
+	}
+}
+.ryker_tm_portfolio .portfolio_list .overlay {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	opacity: 0;
+	visibility: hidden;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_portfolio .portfolio_list .list_inner:hover .overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.ryker_tm_portfolio .portfolio_list .details {
+	position: absolute;
+	z-index: 3;
+	bottom: 35px;
+	left: 40px;
+	opacity: 0;
+	visibility: hidden;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_portfolio .portfolio_list .list_inner:hover .details {
+	opacity: 1;
+	visibility: visible;
+}
+.ryker_tm_portfolio .portfolio_list .details h3 {
+	font-size: 20px;
+	color: #fff;
+}
+.ryker_tm_portfolio .portfolio_list .details span {
+	color: #ddd;
+	font-family: 'Poppins';
+}
+.ryker_tm_full_link {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 5;
+}
+.ryker_tm_portfolio .popup_details {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -11;
+	display: none;
+}
+.ryker_tm_modalbox .portfolio_hidden_infos {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_modalbox .popup_details {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_modalbox .popup_details .top_image {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 37px;
+}
+.ryker_tm_modalbox .popup_details .top_image img {
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+	margin-bottom: -50%;
+}
+.ryker_tm_modalbox .popup_details .top_image .main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+.ryker_tm_modalbox .portfolio_main_title {
+	width: 100%;
+	float: left;
+	margin-bottom: 28px;
+}
+.ryker_tm_modalbox .portfolio_main_title h3 {
+	font-weight: 600;
+	font-size: 23px;
+	margin-bottom: 5px;
+}
+.ryker_tm_modalbox .main_details {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	margin-bottom: 55px;
+}
+.ryker_tm_modalbox .main_details .textbox {
+	width: 70%;
+	padding-right: 40px;
+}
+.ryker_tm_modalbox .main_details .textbox p {
+	margin-bottom: 18px;
+}
+.ryker_tm_modalbox .main_details .textbox p:last-child {
+	margin-bottom: 0px;
+}
+.ryker_tm_modalbox .main_details .detailbox {
+	width: 30%;
+	padding-left: 40px;
+}
+.ryker_tm_modalbox .main_details .detailbox > ul {
+	margin: 0px;
+	list-style-type: none;
+}
+.ryker_tm_modalbox .main_details .detailbox > ul > li {
+	margin: 0px 0px 8px 0px;
+	width: 100%;
+	float: left;
+}
+.ryker_tm_modalbox .main_details .detailbox > ul > li:last-child {
+	margin-bottom: 0px;
+}
+.ryker_tm_modalbox .main_details .detailbox .first {
+	font-weight: 700;
+	display: block;
+	color: #000;
+	margin-bottom: 3px;
+}
+.ryker_tm_modalbox .main_details .detailbox span a {
+	text-decoration: none;
+	color: #767676;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_modalbox .main_details .detailbox span a:hover {
+	color: #000;
+	letter-spacing: 2px;
+}
+.ryker_tm_modalbox .main_details .detailbox .share {
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	top: 7px;
+}
+.ryker_tm_modalbox .main_details .detailbox .share li {
+	margin: 0px 13px 0px 0px;
+	display: inline-block;
+	width: 30px;
+	height: 45px;
+}
+.ryker_tm_modalbox .main_details .detailbox .share li:last-child {
+	margin-right: 0px;
+}
+.ryker_tm_modalbox .main_details .detailbox .share li a {
+	text-decoration: none;
+	color: #000;
+}
+.ryker_tm_modalbox .main_details .detailbox .share li svg {
+	width: 30px;
+	height: 30px;
+}
+.ryker_tm_modalbox .additional_images {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_modalbox .additional_images ul {
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.ryker_tm_modalbox .additional_images ul li {
+	margin: 0px 0px 30px 0px;
+	float: left;
+	width: 50%;
+	padding-left: 30px;
+}
+.ryker_tm_modalbox .additional_images ul li:nth-child(3n-2) {
+	width: 100%;
+}
+.ryker_tm_modalbox .additional_images ul li .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.ryker_tm_modalbox .additional_images ul li .my_image {
+	position: relative;
+}
+.ryker_tm_modalbox .additional_images ul li .my_image img {
+	opacity: 0;
+	min-width: 100%;
+}
+.ryker_tm_modalbox .additional_images ul li .my_image .main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+
+/*---------------------------------------------------*/
+/*	08) RYKER VIDEO
+/*---------------------------------------------------*/
+
+.ryker_tm_video {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.ryker_tm_video .background {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.ryker_tm_video .background .image {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.ryker_tm_video .background .overlay {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 1;
+}
+.ryker_tm_video .content {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	z-index: 2;
+	padding: 160px 0px 150px 0px;
+}
+.ryker_tm_video .ryker_tm_title h3 {
+	color: #fff;
+}
+.ryker_tm_video .content_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	text-align: center;
+}
+.ryker_tm_video .rounded {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 100%;
+	background-color: #fff;
+	margin-bottom: 51px;
+}
+.ryker_tm_video .rounded:before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13px 0 13px 26px;
+	border-color: transparent transparent transparent #d1701f;
+	top: 50%;
+	left: 50%;
+	margin-left: 4px;
+	transform: translate(-50%, -50%);
+}
+.ryker_tm_video .rounded:after {
+	position: absolute;
+	content: '';
+	top: -10px;
+	bottom: -10px;
+	left: -10px;
+	right: -10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 100%;
+	z-index: -1;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_video .rounded:hover:after {
+	top: -20px;
+	bottom: -20px;
+	left: -20px;
+	right: -20px;
+}
+.ryker_tm_video .rounded a {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+.ryker_tm_video .text {
+	color: #fff;
+	font-family: 'Poppins';
+	max-width: 600px;
+	margin: 0px auto;
+	margin-bottom: 45px;
+	font-weight: 700;
+}
+.ryker_tm_video .ryker_tm_button a {
+	background-color: #fff;
+	border-color: #fff;
+	color: #000;
+}
+.ryker_tm_video .ryker_tm_button a:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
+/*---------------------------------------------------*/
+/*	09) RYKER TESTIMONIALS
+/*---------------------------------------------------*/
+
+.ryker_tm_testimonials {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 150px;
+}
+#grouploop {
+	width: 100%;
+	margin: 198px 0px 129px 0px;
+}
+#grouploop .item-wrap {
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	width: 400%;
+	position: relative;
+	white-space: nowrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	/* display: flex; */
+}
+#grouploop .item-wrap .item {
+	color: rgba(0, 0, 0, 0.06);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 100px;
+}
+#grouploop .item-wrap .item span {
+	font-size: 180px;
+	font-weight: 800;
+	font-family: 'Poppins';
+}
+.ryker_tm_testimonials .testimonials_list {
+	width: 100%;
+	max-width: 1150px;
+	height: auto;
+	clear: both;
+	margin: 0px auto;
+	position: relative;
+	left: 62px;
+}
+.ryker_tm_testimonials .wr_in {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	padding: 70px 125px;
+}
+.ryker_tm_testimonials .testimonials_list .wrapper .wr_in .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+	padding: 95px 70px 90px 195px;
+	border-radius: 10px;
+}
+.ryker_tm_testimonials .avatar {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -125px;
+	overflow: hidden;
+}
+.ryker_tm_testimonials .avatar .image {
+	position: absolute;
+	top: -4px;
+	bottom: -4px;
+	left: -4px;
+	right: -4px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	opacity: 0;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+
+	transform: scale(1.2) translateZ(0);
+}
+.ryker_tm_testimonials .owl-carousel .owl-item.active .avatar .image {
+	opacity: 1;
+	transition: all 1s 0.3s ease;
+	transform: scale(1) translateZ(0);
+}
+.ryker_tm_testimonials .stars {
+	width: 100%;
+	float: left;
+}
+.ryker_tm_testimonials .stars {
+	margin: 0px;
+	list-style-type: none;
+	margin-bottom: 25px;
+}
+.ryker_tm_testimonials .stars li {
+	margin: 0px;
+	display: inline-block;
+}
+.ryker_tm_testimonials .stars li .svg {
+	color: #d1701f;
+	width: 18px;
+	height: 18px;
+}
+.ryker_tm_testimonials .text {
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+.ryker_tm_testimonials .text p {
+	font-size: 19px;
+}
+.ryker_tm_testimonials .details {
+	width: 100%;
+	float: left;
+}
+.ryker_tm_testimonials .details .author {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+.ryker_tm_testimonials .details .job {
+	font-weight: 400;
+	font-size: 16px;
+	color: #767676;
+}
+.ryker_tm_testimonials .details h3 {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1;
+	position: relative;
+}
+.ryker_tm_testimonials .details .author span,
+.ryker_tm_testimonials .details .job span {
+	position: relative;
+	display: block;
+	padding: 2px 0px;
+	transform: translateY(102%);
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.ryker_tm_testimonials .owl-carousel .owl-item.active .details .author span {
+	transform: translateY(0px);
+	transition-delay: 0.3s;
+}
+.ryker_tm_testimonials .owl-carousel .owl-item.active .details .job span {
+	transform: translateY(0px);
+	transition-delay: 0.6s;
+}
+.ryker_tm_testimonials .myquote {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	z-index: -1;
+	color: rgba(0, 0, 0, 0.06);
+	right: 70px;
+	bottom: -92px;
+	display: block;
+}
+
+/*---------------------------------------------------*/
+/*	10) RYKER NEWS
+/*---------------------------------------------------*/
+
+.ryker_tm_news {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #f9f9f9;
+	padding: 100px 0px 15px 0px;
+}
+.ryker_tm_news .news_list {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 20px;
+}
+.ryker_tm_news ul {
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.ryker_tm_news ul li {
+	margin: 0px 0px 50px 0px;
+	width: 33.3333%;
+	padding-left: 50px;
+	float: left;
+}
+.ryker_tm_news ul li .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.ryker_tm_news ul li .image {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.ryker_tm_news ul li .image img {
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+}
+.ryker_tm_news ul li .image .main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 8px;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_news ul li .image:hover .main {
+	transform: scale(1.1);
+}
+.ryker_tm_news ul li .details {
+	width: 100%;
+	float: left;
+	padding-top: 9px;
+}
+.ryker_tm_news ul li .details span {
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.ryker_tm_news ul li .details span a {
+	text-decoration: none;
+	color: #767676;
+	position: relative;
+	display: inline-block;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_news ul li .details span a:hover {
+	color: #d1701f;
+}
+.ryker_tm_news ul li .details span a:before {
+	position: relative;
+	content: '.';
+	font-size: 40px;
+	top: -3px;
+	color: #767676;
+	padding: 0px 9px 0px 5px;
+}
+.ryker_tm_news ul li .details .title a {
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	display: block;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_news ul li .details .title a:hover {
+	color: #d1701f;
+}
+
+.ryker_tm_modalbox .description_wrap::-webkit-scrollbar {
+	width: 11px;
+}
+.ryker_tm_modalbox .description_wrap {
+	scrollbar-width: thin;
+	scrollbar-color: #999 #fff;
+}
+.ryker_tm_modalbox .description_wrap:-webkit-scrollbar-track {
+	background: #fff;
+}
+.ryker_tm_modalbox .description_wrap::-webkit-scrollbar-thumb {
+	background-color: #999;
+	border-radius: 6px;
+	border: 3px solid #fff;
+}
+.ryker_tm_modalbox {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100vh;
+	z-index: 15;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	visibility: hidden;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_modalbox.opened {
+	opacity: 1;
+	visibility: visible;
+}
+.ryker_tm_modalbox .box_inner {
+	position: absolute;
+	top: 70px;
+	bottom: 70px;
+	width: 968px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	margin-top: -20px;
+	transition-delay: 0.3s;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ryker_tm_modalbox.opened .box_inner {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 0px;
+}
+.ryker_tm_modalbox .close {
+	position: fixed;
+	left: 100%;
+	top: 0px;
+	margin-left: 40px;
+	z-index: 111111;
+}
+.ryker_tm_modalbox .close a {
+	text-decoration: none;
+	color: #fff;
+}
+.ryker_tm_modalbox .close .svg {
+	width: 50px;
+	height: 50px;
+}
+
+.ryker_tm_modalbox .description_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 50px;
+	overflow-y: scroll;
+}
+.ryker_tm_modalbox .details {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.ryker_tm_modalbox .description_wrap .image {
+	position: relative;
+	max-height: 450px;
+	z-index: -1;
+	margin-bottom: 28px;
+}
+.ryker_tm_modalbox .description_wrap .image img {
+	min-width: 100%;
+	opacity: 0;
+}
+.ryker_tm_modalbox .description_wrap .image .main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+}
+.ryker_tm_modalbox .details .title {
+	font-weight: 600;
+	font-size: 23px;
+	margin-bottom: 9px;
+}
+.ryker_tm_modalbox .details span {
+	font-size: 16px;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+.ryker_tm_modalbox .details span a {
+	text-decoration: none;
+	color: #7e7e7e;
+	position: relative;
+	display: inline-block;
+}
+.ryker_tm_modalbox .details span a:before {
+	position: relative;
+	content: '.';
+	font-size: 40px;
+	top: -3px;
+	color: #7e7e7e;
+	padding: 0px 9px 0px 5px;
+}
+.ryker_tm_news .hide_content {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -11;
+	display: none;
+}
+.ryker_tm_modalbox .hide_content {
+	width: 100%;
+	float: left;
+}
+.ryker_tm_modalbox .hide_content .descriptions {
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+.ryker_tm_modalbox .hide_content .descriptions .bigger {
+	color: #888;
+	font-size: 20px;
+	margin-bottom: 31px;
+}
+.ryker_tm_modalbox .hide_content .descriptions p {
+	margin-bottom: 18px;
+}
+.ryker_tm_modalbox .hide_content .quotebox {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.ryker_tm_modalbox .hide_content .quotebox p {
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 18px;
+	border-left: 2px solid #d1701f;
+	padding-left: 30px;
+	color: #000;
+}
+.ryker_tm_modalbox .hide_content .icon {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+.ryker_tm_modalbox .hide_content .icon .svg {
+	width: 50px;
+	height: 50px;
+}
+.ryker_tm_modalbox .button {
+	display: none;
+}
+
+/*---------------------------------------------------*/
+/*	11) RYKER CONTACT
+/*---------------------------------------------------*/
+
+.ryker_tm_contact {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 100px 0px 50px 0px;
+}
+
+.ryker_tm_contact .social_info {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 30px;
+}
+.ryker_tm_contact .social_info ul {
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.ryker_tm_contact .social_info ul li {
+	float: left;
+	padding-left: 50px;
+}
+.ryker_tm_contact .social_info ul li .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+.ryker_tm_contact .social_info ul li .logo {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	/* background-color: #fff; */
+	background: linear-gradient(
+		45deg,
+		rgba(248, 163, 23, 1) 50%,
+		rgba(253, 196, 7, 1) 50%
+	);
+	border-radius: 100%;
+	position: relative;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 9%);
+}
+
+.ryker_tm_contact .social_info ul li .svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25px;
+	height: 25px;
+	color: #000000;
+	display: block;
+}
+.ryker_tm_contact .social_info ul li .info {
+	padding-left: 30px;
+}
+.ryker_tm_contact .social_info ul li .info h3 {
+	font-size: 16px;
+}
+.ryker_tm_contact .social_info ul li .info span {
+	font-family: 'Poppins';
+}
+
+.ryker_tm_contact .short_info {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 50px;
+}
+.ryker_tm_contact .short_info ul {
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.ryker_tm_contact .short_info ul li {
+	margin: 0px 0px 30px 0px;
+	width: 33.3333%;
+	float: left;
+	padding-left: 50px;
+}
+.ryker_tm_contact .short_info ul li .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+.ryker_tm_contact .short_info ul li .logo {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	/* background-color: #fff; */
+	background: linear-gradient(
+		45deg,
+		rgba(248, 163, 23, 1) 50%,
+		rgba(253, 196, 7, 1) 50%
+	);
+	border-radius: 100%;
+	position: relative;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 9%);
+}
+.ryker_tm_contact .short_info ul li .svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25px;
+	height: 25px;
+	color: #000000;
+	display: block;
+}
+.ryker_tm_contact .short_info ul li .info {
+	padding-left: 30px;
+}
+.ryker_tm_contact .short_info ul li .info h3 {
+	font-size: 16px;
+}
+.ryker_tm_contact .short_info ul li .info span {
+	font-family: 'Poppins';
+}
+
+.ryker_tm_contact .wrapper {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	padding-top: 43px;
+}
+.ryker_tm_contact .desc {
+	max-width: 50%;
+	float: left;
+	padding-top: 73px;
+}
+.ryker_tm_contact .wrapper .left {
+	width: 50%;
+	padding-right: 25px;
+}
+.ryker_tm_contact .fields {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.ryker_tm_contact .fields .first {
+	width: 100%;
+	float: left;
+}
+.ryker_tm_contact .fields ul {
+	margin: 0px;
+	list-style-type: none;
+}
+.ryker_tm_contact .fields ul li {
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+	float: left;
+}
+.ryker_tm_contact .fields ul li input {
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	border-radius: 10px;
+}
+.ryker_tm_contact .fields ul li input:focus {
+	outline: none;
+	border: 1px solid rgb(0, 0, 0);
+}
+.ryker_tm_contact .fields .last textarea {
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 120px;
+	resize: none;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.ryker_tm_contact .fields .last textarea:focus {
+	outline: none;
+	border: 1px solid rgb(0, 0, 0);
+}
+.ryker_tm_contact .empty_notice {
+	color: #f52225;
+	margin-bottom: 7px;
+	display: none;
+	text-align: left;
+	font-weight: 500;
+}
+.ryker_tm_contact .contact_error {
+	color: #f52225;
+	text-align: left;
+	font-weight: 500;
+}
+.ryker_tm_contact .returnmessage {
+	color: #3a00ff;
+	margin-bottom: 7px;
+	text-align: left;
+	font-weight: 500;
+}
+.ryker_tm_contact .right {
+	width: 50%;
+	padding-left: 25px;
+	position: relative;
+	top: 6px;
+}
+.ryker_tm_contact .map_wrap .map {
+	min-height: 359px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+#send_message::after {
+	content: '\e9a5';
+	font-family: 'icomoon';
+	margin-left: 10px;
+}
+
+/*---------------------------------------------------*/
+/*	12) RYKER COPYRIGHT
+/*---------------------------------------------------*/
+
+.ryker_tm_copyright {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #d1701f;
+	padding: 25px 0px;
+}
+.ryker_tm_copyright .copyright_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+.ryker_tm_copyright .text p {
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins';
+}
+.ryker_tm_copyright .social ul {
+	margin: 0px;
+	list-style-type: none;
+}
+.ryker_tm_copyright .social ul li {
+	margin: 0px 20px 0px 0px;
+	display: inline-block;
+}
+.ryker_tm_copyright .social ul li:last-child {
+	margin-right: 0px;
+}
+.ryker_tm_copyright .social ul li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+.ryker_tm_copyright .social ul li a svg {
+	color: #000;
+}
+
+.social-svg {
+	width: 20px;
+	height: 20px;
+}
+
+.bugs-link {
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+
+/*---------------------------------------------------*/
+/*	13) RYKER MAGIC CURSOR
+/*---------------------------------------------------*/
+
+.ryker_tm_all_wrap[data-magic-cursor='hide'] .mouse-cursor {
+	display: none;
+}
+.mouse-cursor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	border-radius: 50%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	visibility: hidden;
+}
+.cursor-inner {
+	margin-left: -3px;
+	margin-top: -3px;
+	width: 6px;
+	height: 6px;
+	z-index: 50;
+	background-color: #d1701f;
+	-webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+		margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+		margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.cursor-inner.cursor-hover {
+	margin-left: -40px;
+	margin-top: -40px;
+	width: 80px;
+	height: 80px;
+	background-color: #d1701f;
+	opacity: 0.3;
+}
+.cursor-outer {
+	margin-left: -15px;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #d1701f;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 50;
+	opacity: 0.5;
+	-webkit-transition: all 0.08s ease-out;
+	transition: all 0.08s ease-out;
+}
+.cursor-outer.cursor-hover {
+	opacity: 0;
+}
+
+/*---------------------------------------------------*/
+/*	14) RYKER MEDIA QUERIES (FOR SMALL DEVIVES)
+/*---------------------------------------------------*/
+
+@media (max-width: 1200px) {
+	.ryker_tm_modalbox .box_inner {
+		width: 600px;
+	}
+	.ryker_tm_modalbox .close {
+		margin-left: 10px;
+	}
+	.ryker_tm_modalbox .main_details {
+		flex-direction: column;
+	}
+	.ryker_tm_modalbox .main_details .textbox {
+		width: 100%;
+		padding-right: 0px;
+		margin-bottom: 40px;
+	}
+	.ryker_tm_modalbox .main_details .detailbox {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.ryker_tm_modalbox .additional_images ul {
+		margin: 0px;
+	}
+	.ryker_tm_modalbox .additional_images ul li {
+		width: 100%;
+		padding-left: 0px;
+	}
+}
+@media (max-width: 1040px) {
+	.ryker_tm_topbar {
+		display: none;
+	}
+	.ryker_tm_mobile_menu {
+		display: block;
+	}
+	.ryker_tm_hero .content {
+		flex-direction: column-reverse;
+		justify-content: center;
+		text-align: center;
+	}
+	.ryker_tm_hero .avatar {
+		min-width: 200px;
+		min-height: 200px;
+		margin-bottom: 50px;
+	}
+	.ryker_tm_hero .job h3 {
+		font-size: 50px;
+	}
+	.ryker_tm_hero .texts {
+		padding: 0px;
+	}
+	.ryker_tm_about .about_inner {
+		flex-direction: column;
+	}
+	.ryker_tm_about .left {
+		width: 100%;
+		margin: 0px 0px 70px 0px;
+	}
+	.ryker_tm_about .right {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.ryker_tm_title h3 {
+		font-size: 25px;
+	}
+	.ryker_tm_about .experience {
+		bottom: 20px;
+		right: 20px;
+	}
+	.ryker_tm_services .services_inner {
+		flex-direction: column;
+	}
+	.ryker_tm_services .left {
+		width: 100%;
+		margin: 0px 0px 70px 0px;
+	}
+	.ryker_tm_services .right {
+		width: 100%;
+		margin: 0px;
+	}
+	.ryker_tm_services .right ul li:nth-child(1) {
+		margin-top: 0px;
+	}
+	.ryker_tm_portfolio .portfolio_list ul li {
+		width: 50%;
+	}
+	.ryker_tm_video .text {
+		font-size: 25px;
+	}
+	#grouploop .item-wrap .item span {
+		font-size: 120px;
+	}
+	#grouploop {
+		margin: 177px 0px 108px 0px;
+	}
+	.ryker_tm_testimonials .avatar {
+		position: relative;
+		width: 60px;
+		height: 60px;
+		top: 0px;
+		left: 0px;
+		transform: translate(0);
+	}
+	.ryker_tm_testimonials .details {
+		margin-bottom: 20px;
+	}
+	.ryker_tm_testimonials .testimonials_list .wrapper .wr_in .list_inner {
+		padding: 70px 50px;
+	}
+	.ryker_tm_testimonials .wr_in {
+		padding: 20px;
+	}
+	.ryker_tm_testimonials .testimonials_list {
+		max-width: 100%;
+		left: 0px;
+	}
+	.ryker_tm_testimonials .myquote {
+		display: none;
+	}
+	.ryker_tm_testimonials .text p {
+		font-size: 17px;
+	}
+	.ryker_tm_news ul li {
+		width: 50%;
+	}
+	.ryker_tm_contact .short_info ul {
+		margin: 0px;
+	}
+	.ryker_tm_contact .short_info ul li {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.ryker_tm_contact .wrapper {
+		flex-direction: column;
+	}
+	.ryker_tm_contact .wrapper .left {
+		width: 100%;
+		padding-right: 0px;
+		margin-bottom: 50px;
+	}
+	.ryker_tm_contact .right {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.ryker_tm_copyright .copyright_inner {
+		flex-direction: column;
+		align-items: center;
+	}
+	.ryker_tm_copyright .text {
+		margin-bottom: 5px;
+	}
+}
+@media (max-width: 768px) {
+	.ryker_tm_hero .job h3 {
+		font-size: 35px;
+	}
+	.ryker_tm_hero .desc p {
+		font-size: 16px;
+	}
+	.short_skills {
+		flex-direction: column;
+		width: auto;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.short_skills .text:before {
+		display: none;
+	}
+	.short_skills .icons {
+		margin-left: 0px;
+	}
+	.short_skills .text {
+		margin-bottom: 20px;
+	}
+	.short_skills .icons ul li {
+		width: 45px;
+		height: 45px;
+		margin-right: 15px;
+	}
+	.short_skills .icons ul li .svg {
+		width: 18px;
+		height: 18px;
+	}
+	.ryker_tm_title h3 {
+		font-size: 22px;
+	}
+	.ryker_tm_about .experience {
+		width: 170px;
+		height: 170px;
+	}
+	.ryker_tm_about .experience .year {
+		font-size: 55px;
+	}
+	#circle text {
+		font-size: 14px;
+	}
+	#circle svg {
+		width: 330px;
+		height: 330px;
+		top: -80px;
+		left: -80px;
+	}
+	.ryker_tm_services .right ul {
+		margin: 0px;
+	}
+	.ryker_tm_services .right ul li {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.ryker_tm_portfolio .portfolio_list ul {
+		margin: 0px;
+	}
+	.ryker_tm_portfolio .portfolio_list ul li {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.ryker_tm_video .rounded {
+		width: 80px;
+		height: 80px;
+	}
+	.ryker_tm_video .text {
+		font-size: 22px;
+	}
+	.ryker_tm_button a {
+		padding: 10px 40px;
+		font-size: 15px;
+	}
+	#grouploop .item-wrap .item span {
+		font-size: 80px;
+	}
+	#grouploop {
+		margin: 162px 0px 93px 0px;
+	}
+	.ryker_tm_news ul {
+		margin: 0px;
+	}
+	.ryker_tm_news ul li {
+		width: 100%;
+		padding-left: 0px;
+	}
+	.ryker_tm_modalbox .box_inner {
+		width: 350px;
+	}
+	.ryker_tm_modalbox .close {
+		margin-left: 10px;
+	}
+	.ryker_tm_modalbox .close .svg {
+		width: 20px;
+		height: 20px;
+	}
+	.ryker_tm_modalbox .description_wrap {
+		padding: 20px;
+	}
+}
