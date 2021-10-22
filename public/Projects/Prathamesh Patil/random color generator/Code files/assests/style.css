@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0 0 3px #000;
+}
+
+.Button {
+  padding: 16px 32px;
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  text-transform: capitalize;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 3px #000;
+}
