@@ -1,2 +1,2 @@
- Deployed As:
+ 
 https://portfolio1-demo.herokuapp.com/
