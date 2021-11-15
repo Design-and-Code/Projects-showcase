@@ -78,7 +78,7 @@ export default function Home(props) {
                         <img src={obj.projectImage} alt="project img" width="100%" className="img-fluid" />
                       </div>
                       </a>
-                      <a href="">
+                      <a href={obj.projectLink} target="blank">
                         <div>
                           <h1 className="text-4xl">{obj.name}</h1>
                           <h3 className="text-lg mt-5">Built by: {obj.builder}</h3>
