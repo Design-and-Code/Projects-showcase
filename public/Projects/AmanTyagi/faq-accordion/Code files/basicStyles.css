@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --gradient-golden: linear-gradient(175deg, #e1cd87, #ca9d4b);
+  --gradient-dark: linear-gradient(150deg, #111111, #000000);
+  --gradient-black: linear-gradient(150deg, #222222, #000000);
+  --gold: #666666;
+  --text-gold: #fdbc53;
+  --light: #fefefe;
+  --semi-dark: #999999;
+  --black: #111111;
+  --primary-color: #1e41b480;
+  --overlay-color: #1e9eb4d0;
+  --ham-speed: 0.75s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+  border-left: 1px solid var(--gold);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-golden);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+main {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
