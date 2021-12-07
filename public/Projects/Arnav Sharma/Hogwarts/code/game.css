@@ -1,0 +1,151 @@
+ody {
+  color: #fff;
+}
+body {
+  background: linear-gradient(rgb(130, 220, 226), rgb(7, 54, 109));
+  height: 590px;
+  overflow-x: hidden;
+}
+/* .choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(18, 93, 255);
+    font-size: 2rem;
+    min-width: 30rem;
+    height: 60px;
+} */
+
+/* .choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    /* transform: scale(1.02);
+    transform: transform 100ms; */
+/* height: 60px; */
+/* }  */
+
+#game {
+  width: 100%;
+  max-width: 80vw;
+  margin: 2vw auto;
+}
+
+.choice-container {
+  padding: 0;
+  display: flex;
+  height: 2cm;
+  justify-content: flex-start;
+  margin-bottom: 0.2rem;
+  background-color: yellow;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(6, 103, 247, 0.5);
+  transform: scale(1.009);
+  transform: transform 100ms;
+}
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  color: black;
+  width: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.choice-container p {
+  height: max-content;
+  margin-top: 0;
+}
+
+.correct {
+  background: linear-gradient(
+    32deg,
+    rgba(11, 223, 36) 0%,
+    rgb(41, 232, 111) 100%
+  );
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.incorrect {
+  background: linear-gradient(
+    rgba(230, 29, 29, 1) 0%,
+    rgb(224, 11, 11, 1) 100%
+  );
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Heads up Display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 2rem;
+  border: 0.2rem solid rgb(2, 46, 7);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(2, 146, 21);
+  width: 0%;
+}
+
+#progressTxt {
+  margin: 0;
+}
+.hud-item p {
+  margin-top: 0;
+}
+.time {
+  margin-top: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+#time-left {
+  text-align: center;
+}
+#question {
+  font-size: 0.62cm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-left: 1cm;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  margin-top: 10px;
+  height: 350px;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 2400px) {
+  #game {
+    max-width: 2000px;
+  }
+}

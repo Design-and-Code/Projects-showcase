@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('blue-bg.jpg');
+    background-size:cover;
+    color: white;
+    /* color: grey; */
+}
+.container{
+    position: absolute;
+    /* border: 2px solid white; */
+    /* background-color: aqua; */
+    background-color: rgb(196, 188, 188);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 33vw;
+    border-radius: 20px;
+}
+.score{
+    background:linear-gradient(rgb(236, 61, 8), rgb(167, 32, 32), rgb(94, 5, 5));
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+#yourScore, #finalScore{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.over{
+    background-color: rgb(87, 80, 80);
+    border-radius: 20px;
+    font-size: 3.7vw;
+    font-weight: bold;
+    height: auto;
+}
+.form{
+    background: linear-gradient(rgb(196, 188, 188),rgb(94, 88, 88));
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 3% 0;
+    text-align: center;
+}
+#username{
+    font-size: 1.5vw;
+    margin-left: 0;
+    height: auto;
+    border-radius: 10px;
+    padding: 1%;
+    /* line-height: 4rem; */
+    
+}
+#end-text{
+    text-align: center;
+    font-size: 2vw;
+}
+/* .in{
+    margin-left: 50px;
+} */
+.btn{
+    height: auto;
+    background-color: rgb(27, 138, 27);
+    font-size: 1.7vw;
+    width: 100px;
+    color: white;
+    border-radius: 15px;
+}
+.btn:hover{
+    color: rgb(10, 9, 9);
+
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.button a{
+    height: auto;
+    width:  120px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.button a:hover{
+    height: auto;
+    width:  120px;
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+}
+
+@media  (max-width: 800px) {
+ .container{
+     width: 50vw;
+ }   
+ #username, .btn{
+     font-size: 3vw;
+     margin: 2%;
+ }
+ .btn{
+     padding: 2%;
+ }
+}

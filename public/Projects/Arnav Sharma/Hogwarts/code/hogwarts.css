@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harry-potter");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+@font-face {
+  font-family: "AuldMagick Bold";
+  src: url("https://db.onlinewebfonts.com/t/8da4e7bc1e0eb9534a2ee26db6d521ce.eot");
+  src: url("//db.onlinewebfonts.com/t/8da4e7bc1e0eb9534a2ee26db6d521ce.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8da4e7bc1e0eb9534a2ee26db6d521ce.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8da4e7bc1e0eb9534a2ee26db6d521ce.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8da4e7bc1e0eb9534a2ee26db6d521ce.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8da4e7bc1e0eb9534a2ee26db6d521ce.svg#AuldMagick Bold")
+      format("svg");
+}
+@font-face {
+  font-family: "Magic School One";
+  src: url(/house_page_template/magic-school.one.ttf);
+}
+
+@font-face {
+  font-family: "Lumos";
+  src: url("fonts/Lumos.woff2") format("woff2"),
+    url("fonts/Lumos.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(235, 229, 270);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  /* border-bottom: 1px solid #133783; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem 0;
+  color: white;
+}
+
+#hog {
+  font-family: "Harry Potter", sans-serif;
+  font-size: 7vw;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+#hog1 {
+  font-family: "Harry Potter", sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.3rem;
+}
+
+#dr {
+  font-style: italic;
+  font-size: 2vw;
+  font-family: sans-serif;
+  margin-top: 0px;
+}
+main {
+  display: flex;
+}
+.section {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(./images/hall.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#heading {
+  font-size: 2vw;
+  font-style: italic;
+  color: rgb(248, 247, 247);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Magic School One";
+}
+#img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 1vw solid;
+  border-color: wheat;
+  box-shadow: 0 20px 20px 20px #0c1445;
+}
+#home h1 {
+  font-size: 4.1vw;
+}
+main {
+  display: flex;
+  width: 100;
+}
+.sec {
+  flex-grow: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/home2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  outline: none;
+}
+.sec h3 {
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  text-shadow: 0px 5px 5px rgb(230 241 235);
+  background: rgb(185 193 186 / 30%);
+  font-weight: bold;
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  width: 100%;
+  padding: 0px 0px 45px 15vw;
+}
+
+#para {
+  font-family: "Crimson Text", cursive;
+  /*font-family:'Baloo 2',cursive;*/
+  font-style: italic;
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+#h3 {
+  font-family: "Crimson Text", cursive;
+  font-style: italic;
+  border-style: solid;
+  font-size: 1.5rem;
+  margin: 0 5%;
+}
+
+#ig1 {
+  border-color: #d72515;
+  box-shadow: 0 0 20px 5px #d72515;
+}
+#ig1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 20px #ff6842ea;
+  border-color: #ff6842ea;
+  transition: all 400ms ease-out;
+}
+#ig2 {
+  border-color: #3e85ff;
+  box-shadow: 0 0 20px 5px #3e85ff;
+}
+#ig2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 20px #72a6ff;
+  border-color: #72a6ff;
+  transition: all 400ms ease-out;
+}
+#ig3 {
+  border-color: #f5f523;
+  box-shadow: 0 0 20px 5px #f5f523;
+}
+#ig3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 20px #f8f863;
+  border-color: #f8f863;
+  transition: all 400ms ease-out;
+}
+#ig4 {
+  border-color: #2e7151;
+  box-shadow: 0 0 20px 5px #2e7151;
+}
+#ig4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 20px #3ab378;
+  border-color: #3ab378;
+  transition: all 400ms ease-out;
+}
+
+.ig {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 1vw solid;
+  margin: 2.5rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #fff;
+  box-shadow: 0px 2px 15px 2px var(#fffdfd);
+  background-color: rgba(0, 0, 0, 0.5);
+  background: none;
+  border-radius: 6px;
+  margin-bottom: 5rem;
+  padding: 5px;
+  opacity: 1;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.5vw;
+  padding: 5% 0;
+  width: 30vw;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgb(196, 185, 43);
+  background-image: url("images/play-background.png");
+  background-size: contain;
+  font-family: "Lumos" !important;
+  border-radius: 4px;
+}
+.fas {
+  font-size: 2vw;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(233, 233, 0, 0.5);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.fa-crown {
+  font-size: 2vw;
+  margin-left: 1rem;
+}
+
+footer {
+  background-color: #172269;
+  padding: 5%;
+  text-align: center;
+}
+
+footer p {
+  margin: -21px 0px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+footer p a {
+  color: #fff;
+}
+
+footer p a:hover {
+  color: #1e7352;
+}
+
+.fact {
+  font-family: "Baloo 2", cursive;
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.fact:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 620px) {
+  #hog,
+  #home h1 {
+    font-size: 5vw;
+  }
+  #hog1 {
+    font-size: 2vw;
+  }
+  #dr,
+  #heading,
+  .fact {
+    font-size: 3vw;
+  }
+  .btn {
+    width: 30vw;
+    padding: 5% 20%;
+  }
+  #para,
+  #h3 {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 10%;
+  }
+}
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(134, 34, 34);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: rgb(61, 2, 2);
+}
+
+.menu {
+  font-family: "Harry Potter", sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  letter-spacing: 0.3rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+.menu:hover {
+  color: rgb(196, 185, 43);
+}
+
+.menu:hover .sub-menu {
+  opacity: 100%;
+  transition: 0.6s;
+}
+
+.sub-menu {
+  opacity: 0%;
+  list-style-type: none;
+  transition: 0.5s;
+  background-color: rgba(39, 34, 34, 0.603);
+}
+
+.sub-menu__links {
+  font-size: 2vw;
+  color: white;
+}
