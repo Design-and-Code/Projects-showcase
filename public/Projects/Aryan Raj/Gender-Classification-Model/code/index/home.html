@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Classification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <p>Gender Classification Model</p>
+        <!-- selection of hair type -->
+        <select name="hairs" id="hairs">
+            <option value="Hair Type">Select hair type</option>
+            <option value="Short Hairs">Short Hairs</option>
+            <option value="Long Hairs Hairs">Long Hairs</option>
+        </select>
+        <!-- width of forehead -->
+        <input type="number" placeholder="Width of Forehead (in cm)" required>
+        <!-- height of forehead -->
+        <input type="number" placeholder="Height of Forehead (in cm)" required>
+        <!-- width of nose -->
+        <select name="noseWidth" id="noseWidth">
+            <option value="Width of Nose">Width of Nose</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+        <!-- height of lips -->
+        <select name="lipsHeight" id="lipsHeight">
+            <option value="Height of Lips">Height of Lips</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+        <!-- distance of nose to lips -->
+        <select name="noseLips" id="noseLips">
+            <option value="nose_to_lips">Distance of Nose to Lips</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

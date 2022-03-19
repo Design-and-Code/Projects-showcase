@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: dodgerblue;
+}
+
+form{
+    height: auto;
+    width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form select{
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 100%;
+    border-radius: 100px;
+    outline: none;
+}
+
+form select:focus{
+    border: 2px solid dodgerblue;
+    width: 100%;
+    transition: 0.1s;
+}
+
+form input{
+    width: 86%;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 100%;
+    border: 1px solid grey;
+    border-radius: 100px;
+    outline: none;
+}
+
+form input:focus{
+    border: 1px solid dodgerblue;
+    width: 100%;
+    transition: 0.1s;
+}
+
+form button{
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid dodgerblue;
+    border-bottom: 4px solid rgb(0, 98, 196);
+    border-radius: 10px;
+    background-color: dodgerblue;
+    font-size: 110%;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+form button:hover{
+    border: 1px solid dodgerblue;
+}
