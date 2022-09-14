@@ -24,5 +24,22 @@
     "eslint-config-next": "11.1.2",
     "postcss": "^8.3.8",
     "tailwindcss": "^2.2.16"
-  }
+  },
+  "description": "Project Showcase is a collection of all the amazing things built by the community members.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Design-and-Code/Projects-showcase.git"
+  },
+  "keywords": [
+    "projects",
+    "showcase",
+    "open-source",
+    "community"
+  ],
+  "author": "DC Community",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Design-and-Code/Projects-showcase/issues"
+  },
+  "homepage": "https://github.com/Design-and-Code/Projects-showcase#readme"
 }
