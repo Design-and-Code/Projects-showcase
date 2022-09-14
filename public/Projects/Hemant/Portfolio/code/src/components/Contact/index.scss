@@ -1,0 +1,322 @@
+.text-contact {
+    &:before {
+        content: '<p>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -23px;
+        left: -20px;
+        opacity: 0.6;
+    }
+
+    &:after {
+        content: '</p>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 10px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+    }
+
+}
+
+.text-zone-contact {
+    position: absolute;
+    top: 330px;
+    transform: translateY(-50%);
+    width: 89%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+    margin: 31px 29px;
+}
+
+.map-wrap {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 680px;
+    margin-bottom: 50px;
+    margin: 0 20px;
+}
+
+.container-contact {
+    width: 100%;
+    will-change: contents;
+    height: 100%;
+    min-height: 566px;
+    opacity: 0;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact.contact-page {
+
+    h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #ffd700;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: -10px;
+
+        &:before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &:after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+
+    p {
+        font-size: 13px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        max-width: fit-content;
+        animation: pulse 1s;
+
+        &:nth-of-type(1) {
+            animation-delay: 1.1s;
+        }
+
+        &:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: 1.3s;
+        }
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin-top: 30px;
+
+    &:before {
+        content: '<form>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -28px;
+        left: -20px;
+        opacity: 0.6;
+    }
+
+    &:after {
+        content: '</form>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -13px;
+        margin-left: -5px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        border: 0;
+        background: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 100%;
+        border: 0;
+        background: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        min-height: 150px;
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #ffd700;
+        float: left;
+        border-radius: 4px;
+        background: 0 0;
+        text-transform: uppercase;
+        float: right;
+        text-align: center;
+        margin-right: 10px;
+        cursor: pointer;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
+    }
+}
+
+.leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}
+
+
+.info-map {
+    position: absolute;
+    background: #000;
+    top: 10px;
+    left: 50px;
+    z-index: 999999;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: #ffd700;
+            transition: ease-in;
+            transition-duration: 100ms;
+        }
+
+        span {
+            font-size: 16px;
+            color: #ffd700;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .text-zone-contact {
+        top: 330px;
+        width: 70%;
+        left: 180px;
+    }
+
+    .map-wrap {
+        width: 70%;
+        height: 70%;
+        top: 650px;
+        padding-bottom: 66px;
+        margin-left: 220px;
+    }
+
+    .container-contact {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container-contact {
+        flex-direction: row;
+    }
+
+    .text-zone-contact {
+        top: 350px;
+        width: 35%;
+        left: 140px;
+    }
+
+    .map-wrap {
+        background: rgba(8, 253, 216, 0.1);
+        width: 50%;
+        height: 100%;
+        top: 0px;
+        right: -20px;
+        padding: 0;
+    }
+
+    .info-map {
+        left: 60px;
+        z-index: 999999;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .text-zone-contact {
+        left: 160px;
+    }
+}
