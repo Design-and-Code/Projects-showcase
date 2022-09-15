@@ -27,7 +27,7 @@
       color: antiquewhite;
       margin-left: 25px;
     }
-    
+
     p {
       font-size: 13px;
       font-family: 'open sans', sans-serif;
@@ -60,8 +60,9 @@
       border-top: 1px solid #292928;
       font-weight: 400;
 
-      &:last-child{
-        border-bottom:  1px solid #292928;;
+      &:last-child {
+        border-bottom: 1px solid #292928;
+        ;
       }
 
       &:hover {
@@ -78,7 +79,7 @@
     }
 
     a.active {
-        color: #ffd700;
+      color: #ffd700;
     }
   }
 
@@ -123,7 +124,7 @@
   top: 6px;
   transition: all 300ms ease-out;
   transform: rotate(180deg);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 0px 6px;
   border-radius: 5px;
   z-index: 100px;
