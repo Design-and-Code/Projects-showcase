@@ -1,0 +1,33 @@
+{
+    "projects": [
+        {
+            "cover": "cloudimage",
+            "title": "Cloud Image",
+            "description": "Firebase, NextJS, Tailwind",
+            "url": "https://image-uploader-by-me.netlify.app/",
+            "code": "https://github.com/hemantwasthere/Image-Uploader"
+        },
+        {
+            "cover": "hulu",
+            "title": "Hulu",
+            "description": "NextJS, TMDB, Tailwind",
+            "url": "https://hulu-three-omega.vercel.app/?genre=fetchTrending",
+            "code": "https://github.com/hemantwasthere/hulu"
+        },
+        {
+            "cover": "github",
+            "title": "GitHub Alt",
+            "description": "NextJS, Firebase, Tailwind",
+            "url": "https://githubbyme.netlify.app/",
+            "code": "https://github.com/hemantwasthere/GitHub-Clone"
+        },
+        {
+            "cover": "Netflix",
+            "title": "Netflix",
+            "description": "NextJS, TMDB, Firebase, Tailwind",
+            "url": "https://netflix-by-me.netlify.app/",
+            "code": "https://github.com/hemantwasthere/Netflix-Klone"
+        }
+    ]
+}
+

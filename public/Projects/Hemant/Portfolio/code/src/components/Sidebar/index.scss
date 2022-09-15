@@ -1,0 +1,264 @@
+.nav-bar {
+  background: #181818;
+  width: 140px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  display: none;
+
+  .logo {
+    text-decoration: none;
+    background: #000;
+    width: 100%;
+    height: 195px;
+
+    img {
+      width: 70px;
+      margin-left: 35px;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 28px;
+      font-family: 'Coolvetica', cursive;
+      color: antiquewhite;
+      margin-left: 25px;
+    }
+
+    p {
+      font-size: 13px;
+      font-family: 'open sans', sans-serif;
+      color: #A4A4A5;
+      margin-top: 16px;
+      margin-left: 20px;
+      font-weight: 400;
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.5s ease-out;
+      font-size: 18px;
+      border-top: 1px solid #292928;
+      font-weight: 400;
+
+      &:last-child {
+        border-bottom: 1px solid #292928;
+        ;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    a.active {
+      color: #ffd700;
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 20px;
+        line-height: 16px;
+        color: #4d4d4e;
+        margin-left: 20px;
+        margin-bottom: 100px;
+
+        &:hover {
+          svg {
+            color: #ffd700;
+            transition: all;
+            transition-duration: 300ms;
+            transition-delay: 10ms;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.toggleHam {
+  z-index: 100;
+  position: absolute;
+  color: #fff;
+  right: 8px;
+  top: 6px;
+  transition: all 300ms ease-out;
+  transform: rotate(180deg);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0px 6px;
+  border-radius: 5px;
+  z-index: 100px;
+}
+
+.nav-bar-second {
+  background: #181818;
+  transition: all 500ms ease-in;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+    background: #000;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.awards {
+      position: absolute;
+      right: 0;
+      width: 30px;
+      height: 30px;
+    }
+
+    img {
+      width: 70px;
+      height: auto;
+      margin-left: 15px;
+      margin-top: 65px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-size: 20px;
+      font-family: 'Coolvetica', cursive;
+      color: antiquewhite;
+      margin-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: 'open sans', sans-serif;
+      color: #A4A4A5;
+      margin-top: 0;
+      margin-left: 10px;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 60%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 15px;
+      color: #919196;
+      display: block;
+      line-height: 50px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+      font-weight: 350;
+      border-top: 1px solid #292928;
+
+      &:hover {
+        color: #ffd700;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #292928;
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 21px;
+        line-height: 16px;
+        color: #4d4d4e;
+        margin-left: 2rem;
+
+        &:hover {
+          svg {
+            color: #ffd700;
+            transition: all;
+            transition-duration: 300ms;
+            transition-delay: 10ms;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    display: block;
+  }
+
+  .toggleHam {
+    display: none;
+  }
+}
